@@ -43,6 +43,32 @@ const Experience = () => {
         "Maintained high code quality standards and documentation"
       ],
       technologies: ["React", "JavaScript", "SASS", "Jest", "Cypress"]
+    },
+    {
+      company: "CodeCraft Solutions",
+      role: "Junior Developer",
+      duration: "2018 - 2019",
+      location: "New York, NY",
+      description: [
+        "Contributed to development of e-commerce platforms for mid-size businesses",
+        "Assisted in debugging and fixing critical production issues",
+        "Participated in agile development processes and daily standups",
+        "Learned modern web technologies and best practices through mentorship"
+      ],
+      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Bootstrap"]
+    },
+    {
+      company: "University Tech Lab",
+      role: "Software Development Intern",
+      duration: "2017 - 2018",
+      location: "Boston, MA",
+      description: [
+        "Developed internal tools and automation scripts for research projects",
+        "Assisted professors and graduate students with technical implementations",
+        "Created data visualization dashboards for academic research",
+        "Gained hands-on experience with version control and collaborative coding"
+      ],
+      technologies: ["Python", "JavaScript", "Git", "SQLite", "Chart.js"]
     }
   ];
 
