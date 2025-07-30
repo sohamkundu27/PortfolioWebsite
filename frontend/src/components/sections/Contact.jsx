@@ -1,45 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
-import { Label } from "../ui/label";
-import { toast } from "sonner";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast.error("Please fill in all fields");
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully! I'll get back to you soon.");
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 2000);
-  };
 
   const contactInfo = [
     {
@@ -80,12 +44,12 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="text-center space-y-12">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Connect</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
                 I'm always open to discussing new opportunities, interesting projects, 
                 or just having a chat about technology and development. Feel free to 
                 reach out through any of the channels below.
@@ -93,17 +57,17 @@ const Contact = () => {
             </div>
 
             {/* Contact Details */}
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-center group">
-                  <div 
-                    className="w-12 h-12 rounded-lg flex items-center justify-center mr-4 transition-colors group-hover:bg-blue-600"
-                    style={{ backgroundColor: "#1261A0" }}
-                  >
-                    <info.icon size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 uppercase tracking-wide">{info.label}</p>
+                <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-0">
+                  <CardContent className="p-6 text-center">
+                    <div 
+                      className="w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-blue-600"
+                      style={{ backgroundColor: "#1261A0" }}
+                    >
+                      <info.icon size={24} className="text-white" />
+                    </div>
+                    <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">{info.label}</p>
                     {info.link ? (
                       <a
                         href={info.link}
@@ -114,110 +78,49 @@ const Contact = () => {
                     ) : (
                       <p className="text-gray-900 font-medium">{info.value}</p>
                     )}
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <h4 className="text-lg font-semibold text-gray-900 mb-6">Follow Me</h4>
+              <div className="flex justify-center space-x-6">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-16 h-16 rounded-xl bg-gray-200 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110 shadow-lg"
                   >
-                    <social.icon size={20} />
+                    <social.icon size={24} />
                   </a>
                 ))}
               </div>
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <Card className="shadow-xl border-0">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-sm font-medium text-gray-700">
-                    Full Name
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="Your full name"
-                    className="mt-1 border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                    disabled={isSubmitting}
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="your.email@example.com"
-                    className="mt-1 border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                    disabled={isSubmitting}
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell me about your project or just say hello..."
-                    rows={5}
-                    className="mt-1 border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none"
-                    disabled={isSubmitting}
-                  />
-                </div>
-
+            {/* Call to Action */}
+            <Card className="shadow-xl border-0" style={{ backgroundColor: "#f8fafc" }}>
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-gray-900 mb-4">Ready to Work Together?</h4>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  I'm currently available for new projects and collaborations. 
+                  Let's discuss how we can bring your ideas to life.
+                </p>
                 <Button
-                  type="submit"
                   size="lg"
-                  disabled={isSubmitting}
-                  className="w-full text-white transition-all duration-300 hover:scale-105"
+                  className="text-white transition-all duration-300 hover:scale-105"
                   style={{ backgroundColor: "#1261A0" }}
+                  onClick={() => window.open("mailto:your.email@example.com", "_blank")}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={18} className="mr-2" />
-                      Send Message
-                    </>
-                  )}
+                  <Mail size={18} className="mr-2" />
+                  Get In Touch
                 </Button>
-              </form>
-
-              <p className="text-sm text-gray-500 mt-4 text-center">
-                I typically respond within 24 hours
-              </p>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

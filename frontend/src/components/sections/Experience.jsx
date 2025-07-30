@@ -10,6 +10,7 @@ const Experience = () => {
       role: "Senior Full Stack Developer",
       duration: "2022 - Present",
       location: "San Francisco, CA",
+      logo: "https://via.placeholder.com/60x60/1261A0/FFFFFF?text=TSI",
       description: [
         "Led development of microservices architecture serving 100K+ users",
         "Implemented CI/CD pipelines reducing deployment time by 60%",
@@ -23,6 +24,7 @@ const Experience = () => {
       role: "Full Stack Developer",
       duration: "2020 - 2022",
       location: "Austin, TX",
+      logo: "https://via.placeholder.com/60x60/374151/FFFFFF?text=DI",
       description: [
         "Developed and maintained 5+ client-facing web applications",
         "Collaborated with UI/UX team to implement pixel-perfect designs",
@@ -36,6 +38,7 @@ const Experience = () => {
       role: "Frontend Developer",
       duration: "2019 - 2020",
       location: "Remote",
+      logo: "https://via.placeholder.com/60x60/059669/FFFFFF?text=XYZ",
       description: [
         "Built responsive single-page applications from scratch",
         "Implemented modern development workflows and testing strategies",
@@ -43,6 +46,34 @@ const Experience = () => {
         "Maintained high code quality standards and documentation"
       ],
       technologies: ["React", "JavaScript", "SASS", "Jest", "Cypress"]
+    },
+    {
+      company: "CodeCraft Solutions",
+      role: "Junior Developer",
+      duration: "2018 - 2019",
+      location: "New York, NY",
+      logo: "https://via.placeholder.com/60x60/DC2626/FFFFFF?text=CCS",
+      description: [
+        "Contributed to development of e-commerce platforms for mid-size businesses",
+        "Assisted in debugging and fixing critical production issues",
+        "Participated in agile development processes and daily standups",
+        "Learned modern web technologies and best practices through mentorship"
+      ],
+      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Bootstrap"]
+    },
+    {
+      company: "University Tech Lab",
+      role: "Software Development Intern",
+      duration: "2017 - 2018",
+      location: "Boston, MA",
+      logo: "https://via.placeholder.com/60x60/7C3AED/FFFFFF?text=UTL",
+      description: [
+        "Developed internal tools and automation scripts for research projects",
+        "Assisted professors and graduate students with technical implementations",
+        "Created data visualization dashboards for academic research",
+        "Gained hands-on experience with version control and collaborative coding"
+      ],
+      technologies: ["Python", "JavaScript", "Git", "SQLite", "Chart.js"]
     }
   ];
 
@@ -76,18 +107,30 @@ const Experience = () => {
                     <CardContent className="p-6">
                       {/* Header */}
                       <div className="mb-4">
-                        <div className="flex items-start justify-between flex-wrap gap-2 mb-2">
-                          <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                        <div className="flex items-start justify-between flex-wrap gap-2 mb-4">
+                          <div className="flex items-center space-x-4">
+                            {/* Company Logo */}
+                            <div className="flex-shrink-0">
+                              <img
+                                src={exp.logo}
+                                alt={`${exp.company} logo`}
+                                className="w-12 h-12 rounded-lg object-cover shadow-md"
+                              />
+                            </div>
+                            <div>
+                              <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                              <div className="flex items-center text-gray-600">
+                                <Building size={16} className="mr-2" />
+                                <span className="font-medium">{exp.company}</span>
+                                <span className="mx-2">•</span>
+                                <span>{exp.location}</span>
+                              </div>
+                            </div>
+                          </div>
                           <Badge variant="outline" className="text-xs">
                             <Calendar size={12} className="mr-1" />
                             {exp.duration}
                           </Badge>
-                        </div>
-                        <div className="flex items-center text-gray-600 mb-3">
-                          <Building size={16} className="mr-2" />
-                          <span className="font-medium">{exp.company}</span>
-                          <span className="mx-2">•</span>
-                          <span>{exp.location}</span>
                         </div>
                       </div>
 
