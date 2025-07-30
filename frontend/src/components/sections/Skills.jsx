@@ -6,82 +6,22 @@ import { Code, Server, Database, Wrench, Palette, Globe } from "lucide-react";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Languages",
       icon: Code,
       color: "#1261A0",
-      skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "JavaScript", level: 95 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "Tailwind CSS", level: 85 },
-        { name: "Vue.js", level: 80 }
-      ]
+      skills: ["Go", "Java", "JavaScript", "Python", "SQL"]
     },
     {
-      title: "Backend Development",
+      title: "Frameworks/Libraries",
       icon: Server,
       color: "#374151",
-      skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "Express.js", level: 88 },
-        { name: "REST APIs", level: 92 },
-        { name: "GraphQL", level: 75 },
-        { name: "Java", level: 70 }
-      ]
+      skills: ["Django", "Flask", "Matplotlib", "NumPy", "OpenCV", "Pandas", "Pytorch", "Sklearn", "TensorFlow", ".NET"]
     },
     {
-      title: "Database & Storage",
-      icon: Database,
-      color: "#059669",
-      skills: [
-        { name: "MongoDB", level: 85 },
-        { name: "PostgreSQL", level: 82 },
-        { name: "Redis", level: 75 },
-        { name: "Firebase", level: 80 },
-        { name: "MySQL", level: 78 },
-        { name: "Elasticsearch", level: 65 }
-      ]
-    },
-    {
-      title: "DevOps & Tools",
+      title: "Developer Tools",
       icon: Wrench,
       color: "#DC2626",
-      skills: [
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Git", level: 95 },
-        { name: "CI/CD", level: 78 },
-        { name: "Linux", level: 82 },
-        { name: "Kubernetes", level: 65 }
-      ]
-    },
-    {
-      title: "Design & UI/UX",
-      icon: Palette,
-      color: "#7C3AED",
-      skills: [
-        { name: "Figma", level: 80 },
-        { name: "Adobe XD", level: 75 },
-        { name: "Responsive Design", level: 90 },
-        { name: "User Experience", level: 85 },
-        { name: "Prototyping", level: 78 },
-        { name: "Design Systems", level: 82 }
-      ]
-    },
-    {
-      title: "Other Technologies",
-      icon: Globe,
-      color: "#EA580C",
-      skills: [
-        { name: "Next.js", level: 85 },
-        { name: "Webpack", level: 70 },
-        { name: "Testing (Jest)", level: 80 },
-        { name: "Socket.io", level: 75 },
-        { name: "Microservices", level: 78 },
-        { name: "Agile/Scrum", level: 90 }
-      ]
+      skills: ["AWS", "Azure", "CI/CD", "Docker", "Git/GitHub", "Google Cloud", "Linux", "REST APIs", "Test-Driven Development"]
     }
   ];
 
