@@ -52,27 +52,16 @@ const Skills = () => {
                 </div>
 
                 {/* Skills List */}
-                <div className="space-y-4">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-gray-700">{skill.name}</span>
-                        <Badge variant="outline" className="text-xs">
-                          {skill.level}%
-                        </Badge>
-                      </div>
-                      
-                      {/* Progress Bar */}
-                      <div className="w-full bg-gray-200 rounded-full h-2">
-                        <div
-                          className="h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{
-                            width: `${skill.level}%`,
-                            backgroundColor: category.color,
-                          }}
-                        />
-                      </div>
-                    </div>
+                    <Badge 
+                      key={skillIndex} 
+                      variant="outline"
+                      className="px-3 py-1 text-sm hover:bg-gray-50 transition-colors cursor-default"
+                      style={{ borderColor: category.color, color: category.color }}
+                    >
+                      {skill}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>
