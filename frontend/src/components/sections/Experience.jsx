@@ -107,18 +107,30 @@ const Experience = () => {
                     <CardContent className="p-6">
                       {/* Header */}
                       <div className="mb-4">
-                        <div className="flex items-start justify-between flex-wrap gap-2 mb-2">
-                          <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                        <div className="flex items-start justify-between flex-wrap gap-2 mb-4">
+                          <div className="flex items-center space-x-4">
+                            {/* Company Logo */}
+                            <div className="flex-shrink-0">
+                              <img
+                                src={exp.logo}
+                                alt={`${exp.company} logo`}
+                                className="w-12 h-12 rounded-lg object-cover shadow-md"
+                              />
+                            </div>
+                            <div>
+                              <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                              <div className="flex items-center text-gray-600">
+                                <Building size={16} className="mr-2" />
+                                <span className="font-medium">{exp.company}</span>
+                                <span className="mx-2">•</span>
+                                <span>{exp.location}</span>
+                              </div>
+                            </div>
+                          </div>
                           <Badge variant="outline" className="text-xs">
                             <Calendar size={12} className="mr-1" />
                             {exp.duration}
                           </Badge>
-                        </div>
-                        <div className="flex items-center text-gray-600 mb-3">
-                          <Building size={16} className="mr-2" />
-                          <span className="font-medium">{exp.company}</span>
-                          <span className="mx-2">•</span>
-                          <span>{exp.location}</span>
                         </div>
                       </div>
 
