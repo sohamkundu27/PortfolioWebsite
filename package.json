@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A sleek, responsive personal portfolio website",
+  "main": "frontend/src/index.js",
+  "scripts": {
+    "build": "cd frontend && yarn build",
+    "start": "cd frontend && yarn start",
+    "dev": "cd frontend && yarn start",
+    "install": "cd frontend && yarn install"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "tailwindcss",
+    "responsive",
+    "personal-website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
