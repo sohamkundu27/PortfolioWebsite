@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { Github, FileText, Linkedin, Briefcase, Mail } from "lucide-react";
+import bgImage from "../assets/bgproper-DkkcksB5-DkkcksB5.png";
 
 const Hero = ({ scrollToSection }) => {
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
+    { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
     { icon: FileText, label: "Resume", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sohamkundu27/" },
     { icon: Briefcase, label: "Portfolio", onClick: () => scrollToSection("portfolio") },
     { icon: Mail, label: "Contact", onClick: () => scrollToSection("contact") },
   ];
@@ -16,7 +17,7 @@ const Hero = ({ scrollToSection }) => {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NTM4Nzk2NzN8MA&ixlib=rb-4.1.0&q=85')`,
+        backgroundImage: `url(${bgImage})`,
       }}
     >
       <div className="absolute inset-0 bg-black/40" />
@@ -33,13 +34,13 @@ const Hero = ({ scrollToSection }) => {
 
         {/* Name and Tagline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Your Name
+          Soham Kundu
         </h1>
         <p className="text-xl sm:text-2xl text-gray-200 mb-12 leading-relaxed max-w-2xl mx-auto">
-          Full Stack Developer & Tech Enthusiast
+          Computer Engineering + Computer Science @ UW-Madison
           <br />
           <span className="text-lg text-gray-300">
-            Building innovative solutions with modern technologies
+            Pursuing a career in Software Engineering & AI/ML.
           </span>
         </p>
 

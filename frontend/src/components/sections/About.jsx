@@ -31,38 +31,24 @@ const About = () => {
           <div className="space-y-6">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Hello, I'm a Developer</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Hello, I'm a Software Engineer</h3>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    I'm a passionate full-stack developer with over 5 years of experience in creating 
-                    robust web applications and scalable software solutions. My journey in technology 
-                    started with a curiosity about how things work, and has evolved into a career 
-                    dedicated to building innovative digital experiences.
+                  Currently building agentic AI prototypes at Blue Cross Blue Shield to streamline healthcare operations using Azure AI, .NET, and Python microservices. Developed LLM-powered prior-authorization agents for real-time support in customer service workflows. Built a hybrid keyword + semantic search pipeline that cut CSR search time by 90%, accelerating access to care for over 3M+ members.
                   </p>
                   <p>
-                    Specializing in modern web technologies, I enjoy tackling complex problems and 
-                    turning ideas into reality. From responsive front-end interfaces to powerful 
-                    back-end systems, I love working across the full technology stack to deliver 
-                    comprehensive solutions.
+                  Co-founder of ClaimReady — 1st place winner at MadData25, recognized by YC’s Jared Friedman and Ankit Gupta as well as the UW-Madison CS department. We cut wildfire insurance claim time from 10 hours to minutes using YOLO11, Gemini API, and real-time valuation deployed on AWS EC2.
+
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing to 
-                    open-source projects, or sharing knowledge with the developer community through 
-                    blog posts and mentoring.
+                  Lead Engineer & Co-founder of FiPet, a gamified financial literacy platform for teens.
+                  Designed the full-stack architecture (Firebase + React Native), integrated ML-powered personalization, and led a 15-person dev team through hiring, onboarding, and MVP delivery.
+                  </p>
+                  <p>
+                  Former ML researcher under Prof. Andreas Velten at UW-Madison. Wrote code in Python to control MEMS mirrors and SPAD sensors, built Python pipelines for dynamic scanning, and applied PCA + CNNs to extract signals from scattered hyperspectral data.
                   </p>
                 </div>
 
-                {/* Quick Stats */}
-                <div className="grid grid-cols-2 gap-6 mt-8 pt-6 border-t border-gray-200">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold" style={{ color: "#1261A0" }}>5+</div>
-                    <div className="text-sm text-gray-500">Years Experience</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold" style={{ color: "#1261A0" }}>50+</div>
-                    <div className="text-sm text-gray-500">Projects Completed</div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
