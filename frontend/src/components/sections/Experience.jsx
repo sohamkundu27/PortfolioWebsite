@@ -10,6 +10,7 @@ const Experience = () => {
       role: "Senior Full Stack Developer",
       duration: "2022 - Present",
       location: "San Francisco, CA",
+      logo: "https://via.placeholder.com/60x60/1261A0/FFFFFF?text=TSI",
       description: [
         "Led development of microservices architecture serving 100K+ users",
         "Implemented CI/CD pipelines reducing deployment time by 60%",
@@ -23,6 +24,7 @@ const Experience = () => {
       role: "Full Stack Developer",
       duration: "2020 - 2022",
       location: "Austin, TX",
+      logo: "https://via.placeholder.com/60x60/374151/FFFFFF?text=DI",
       description: [
         "Developed and maintained 5+ client-facing web applications",
         "Collaborated with UI/UX team to implement pixel-perfect designs",
@@ -36,6 +38,7 @@ const Experience = () => {
       role: "Frontend Developer",
       duration: "2019 - 2020",
       location: "Remote",
+      logo: "https://via.placeholder.com/60x60/059669/FFFFFF?text=XYZ",
       description: [
         "Built responsive single-page applications from scratch",
         "Implemented modern development workflows and testing strategies",
@@ -49,6 +52,7 @@ const Experience = () => {
       role: "Junior Developer",
       duration: "2018 - 2019",
       location: "New York, NY",
+      logo: "https://via.placeholder.com/60x60/DC2626/FFFFFF?text=CCS",
       description: [
         "Contributed to development of e-commerce platforms for mid-size businesses",
         "Assisted in debugging and fixing critical production issues",
@@ -62,6 +66,7 @@ const Experience = () => {
       role: "Software Development Intern",
       duration: "2017 - 2018",
       location: "Boston, MA",
+      logo: "https://via.placeholder.com/60x60/7C3AED/FFFFFF?text=UTL",
       description: [
         "Developed internal tools and automation scripts for research projects",
         "Assisted professors and graduate students with technical implementations",
