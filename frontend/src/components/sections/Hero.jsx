@@ -6,7 +6,7 @@ import bgImage from "../assets/bgproper-DkkcksB5-DkkcksB5.png";
 const Hero = ({ scrollToSection }) => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
-    { icon: FileText, label: "Resume", href: "#" },
+    { icon: FileText, label: "Resume", href: "/SohamKunduResume.pdf" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sohamkundu27/" },
     { icon: Briefcase, label: "Portfolio", onClick: () => scrollToSection("portfolio") },
     { icon: Mail, label: "Contact", onClick: () => scrollToSection("contact") },
@@ -46,18 +46,37 @@ const Hero = ({ scrollToSection }) => {
 
         {/* Social Links */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-          {socialLinks.map(({ icon: Icon, label, href, onClick }) => (
+        {socialLinks.map(({ icon: Icon, label, href, onClick }) => (
+          href ? (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button
+                variant="outline"
+                size="lg"
+                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
+              >
+                <Icon size={20} className="mr-2" />
+                {label}
+              </Button>
+            </a>
+          ) : (
             <Button
               key={label}
               variant="outline"
               size="lg"
               className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
-              onClick={onClick || (() => window.open(href, "_blank"))}
+              onClick={onClick}
             >
               <Icon size={20} className="mr-2" />
               {label}
             </Button>
-          ))}
+          )
+        ))}
         </div>
 
         {/* CTA Button */}

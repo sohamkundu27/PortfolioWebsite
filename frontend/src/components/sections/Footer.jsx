@@ -5,10 +5,9 @@ const Footer = ({ scrollToSection }) => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://github.com/yourusername" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com/yourusername" },
-    { icon: Mail, label: "Email", href: "mailto:your.email@example.com" }
+    { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/sohamkundu27" },
+    { icon: Mail, label: "Email", href: "mailto:skundu6@wisc.edu" }
   ];
 
   const quickLinks = [
