@@ -7,6 +7,7 @@ import Skills from "./sections/Skills";
 import PortfolioSection from "./sections/PortfolioSection";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import { Toaster } from "sonner";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
