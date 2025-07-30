@@ -55,6 +55,7 @@ const Portfolio = () => {
         <Contact />
       </main>
       <Footer scrollToSection={scrollToSection} />
+      <Toaster position="top-right" richColors />
     </div>
   );
 };
