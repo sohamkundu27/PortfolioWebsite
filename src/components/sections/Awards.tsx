@@ -1,7 +1,8 @@
 'use client'
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Trophy, Award, Star } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Trophy, Award, Star, ExternalLink } from "lucide-react"
 
 const Awards = () => {
   const awards = [
@@ -11,7 +12,8 @@ const Awards = () => {
       description: "24 hour hackathon with 30+ teams and 120+ competitors. Won first place and best presentation for ClaimReady.",
       icon: Trophy,
       color: "#1261A0",
-      category: "Hackathon"
+      category: "Hackathon",
+      devpostLink: "https://devpost.com/sohamkundu2704"
     },
     {
       id: 2,
@@ -19,7 +21,8 @@ const Awards = () => {
       description: "Achieved Top 3 and Audience Favorite among 30+ teams across 9 universities.",
       icon: Award,
       color: "#1261A0",
-      category: "Startup Competition"
+      category: "National Startup Competition",
+      articleLink: "https://business.wisc.edu/centers/weinert/blog/uw-madisons-claimready-takes-home-audience-favorite-award-and-third-place-at-depaul-universitys-pitch-madness-competition/"
     },
     {
       id: 3,
@@ -27,7 +30,7 @@ const Awards = () => {
       description: "Competed against 20+ teams from UW-Madison in the university startup competition.",
       icon: Star,
       color: "#1261A0",
-      category: "University Competition"
+      category: "University Startup Competition"
     }
   ];
 
@@ -85,6 +88,35 @@ const Awards = () => {
                     >
                       {award.category}
                     </span>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="mt-4 space-y-2">
+                    {/* Devpost Button for MadData25 */}
+                    {award.devpostLink && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors w-full"
+                        onClick={() => window.open(award.devpostLink, "_blank")}
+                      >
+                        <ExternalLink size={16} className="mr-2" />
+                        View on Devpost
+                      </Button>
+                    )}
+
+                    {/* Article Button for University Madness */}
+                    {award.articleLink && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors w-full"
+                        onClick={() => window.open(award.articleLink, "_blank")}
+                      >
+                        <ExternalLink size={16} className="mr-2" />
+                        Read Article
+                      </Button>
+                    )}
                   </div>
                 </div>
               </CardContent>
