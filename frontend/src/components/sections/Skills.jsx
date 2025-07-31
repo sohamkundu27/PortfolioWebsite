@@ -68,26 +68,6 @@ const Skills = () => {
             </Card>
           ))}
         </div>
-
-        {/* Additional Skills Tags */}
-        <div className="mt-16 text-center">
-          <h4 className="text-xl font-semibold text-gray-900 mb-6">Additional Technologies</h4>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Sass/SCSS", "Material-UI", "Bootstrap", "Styled Components",
-              "Storybook", "Cypress", "Postman", "Insomnia", "Jira", "Slack",
-              "Visual Studio Code", "IntelliJ IDEA", "Photoshop", "Illustrator"
-            ].map((tech) => (
-              <Badge 
-                key={tech} 
-                variant="outline"
-                className="px-3 py-1 text-sm hover:bg-gray-100 transition-colors cursor-default"
-              >
-                {tech}
-              </Badge>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

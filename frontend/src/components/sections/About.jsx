@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "../ui/card";
+import sohamSenior from "../assets/sohamsenior.jpg";
 
 const About = () => {
   return (
@@ -14,10 +15,12 @@ const About = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-80 h-80 rounded-2xl bg-gray-300 shadow-2xl overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-white text-6xl font-bold">
-                  Photo
-                </div>
+              <div className="w-80 h-80 rounded-2xl shadow-2xl overflow-hidden">
+                <img 
+                  src={sohamSenior} 
+                  alt="Soham Kundu Senior Photo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative element */}
               <div 

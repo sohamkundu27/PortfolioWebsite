@@ -10,67 +10,77 @@ const PortfolioSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured online marketplace with user authentication, payment processing, and admin dashboard. Built with modern technologies for scalability.",
+      title: "ClaimReady",
+      description: "Co-founded a 5x award-winning AI startup web app to cut insurance claim valuation time from 20+ hrs to minutes. Utilized YOLO11 for detection, Google Lens API for identification/pricing, and Supabase for auth; processed 1200+ images. Deployed via Docker on an AWS EC2 instance; scaled to support our 300+ users. Recognized as 'investor-ready' by judges; acknowledged by YC's Jared Friedman, Ankit Gupta, and UW-Madison CS Dept.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-      category: "fullstack",
-      demoLink: "#",
+      technologies: ["YOLO11", "Google Lens API", "Supabase", "Docker", "AWS EC2"],
+      category: "ai",
+      demoLink: "https://claim-ready.vercel.app",
       githubLink: "#",
-      featured: true
+      deployed: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "Hyperacing",
+      description: "Built and scaled Go backend with REST APIs for a real-time F1 daily fantasy sports app with 200+ active users. Integrated Firebase Auth for secure user login and session management, and used F1 websockets for live race telemetry data. Engineered a Next.js frontend with dynamic dashboards for AI-powered predictions, betting trends, and expert insights.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL"],
-      category: "frontend",
-      demoLink: "#",
+      technologies: ["Go", "Next.js", "Firebase Auth", "WebSockets", "REST APIs"],
+      category: "fullstack",
+      demoLink: "https://hyperacing.us",
       githubLink: "#",
-      featured: false
+      deployed: true
     },
     {
       id: 3,
-      title: "Weather Analytics Dashboard",
-      description: "Interactive data visualization dashboard displaying weather patterns and forecasts with responsive charts and real-time data updates.",
+      title: "Voice-Controlled MCP Robot Arm",
+      description: "Built a full-stack voice interface to control a robot arm by transcribing real-time speech into structured robot commands. Engineered an LLM task planner to convert prompts like 'clear the table' into JSON robot actions executed via MCP. Validated the entire pipeline with async audio input and physics-based simulation, ensuring robust task completion.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "D3.js", "Python", "FastAPI"],
-      category: "frontend",
+      technologies: ["LLM", "Voice Recognition", "MCP", "Robot Control", "Python"],
+      category: "ai",
       demoLink: "#",
       githubLink: "#",
-      featured: true
+      deployed: false
     },
     {
       id: 4,
-      title: "API Gateway Service",
-      description: "Microservices architecture with API gateway, authentication, rate limiting, and service discovery. Handles 1000+ requests per second.",
+      title: "Greenhouse IoT Monitoring System",
+      description: "Built IoT greenhouse system tracking temp, humidity, and brightness on Raspberry Pi in Python, optimizing GPIO control. Configured Azure IoT Hub and REST APIs for real-time transmission of over 10K data points daily. Deployed a Dockerized Django-React app on Azure App Services, enabling remote monitoring by parents in India.",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop",
-      technologies: ["Node.js", "Docker", "Redis", "AWS"],
-      category: "backend",
+      technologies: ["Raspberry Pi", "Python", "Azure IoT Hub", "Django", "React"],
+      category: "iot",
       demoLink: "#",
       githubLink: "#",
-      featured: false
+      deployed: false
     },
     {
       id: 5,
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, and money transfer capabilities.",
+      title: "Project 5",
+      description: "Coming soon...",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
-      technologies: ["React Native", "Firebase", "Node.js", "MongoDB"],
-      category: "mobile",
+      technologies: ["Coming Soon"],
+      category: "fullstack",
       demoLink: "#",
       githubLink: "#",
-      featured: true
+      deployed: false
+    },
+    {
+      id: 6,
+      title: "Project 6",
+      description: "Coming soon...",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      technologies: ["Coming Soon"],
+      category: "fullstack",
+      demoLink: "#",
+      githubLink: "#",
+      deployed: false
     }
   ];
 
   const categories = [
     { id: "all", label: "All Projects" },
+    { id: "ai", label: "AI/ML" },
     { id: "fullstack", label: "Full Stack" },
-    { id: "frontend", label: "Frontend" },
-    { id: "backend", label: "Backend" },
-    { id: "mobile", label: "Mobile" }
+    { id: "iot", label: "IoT" }
   ];
 
   const filteredProjects = activeFilter === "all" 
@@ -116,7 +126,7 @@ const PortfolioSection = () => {
             <Card 
               key={project.id} 
               className={`group shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0 overflow-hidden ${
-                project.featured ? 'ring-2 ring-blue-100' : ''
+                project.deployed ? 'ring-2 ring-blue-100' : ''
               }`}
             >
               {/* Project Image */}
@@ -127,27 +137,39 @@ const PortfolioSection = () => {
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 
-                {/* Featured Badge */}
-                {project.featured && (
+                {/* Deployed Badge */}
+                {project.deployed && (
                   <Badge 
                     className="absolute top-4 right-4 text-white"
                     style={{ backgroundColor: "#1261A0" }}
                   >
-                    Featured
+                    Deployed
                   </Badge>
                 )}
 
                 {/* Overlay with Actions */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="text-white border-white hover:bg-white hover:text-gray-900"
-                    onClick={() => window.open(project.demoLink, "_blank")}
-                  >
-                    <Eye size={16} className="mr-2" />
-                    Demo
-                  </Button>
+                  {(project.title === "ClaimReady" || project.title === "Hyperacing") ? (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="text-white border-white hover:bg-white hover:text-gray-900"
+                      onClick={() => window.open(project.demoLink, "_blank")}
+                    >
+                      <ExternalLink size={16} className="mr-2" />
+                      Website
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="text-white border-white hover:bg-white hover:text-gray-900"
+                      onClick={() => window.open(project.demoLink, "_blank")}
+                    >
+                      <Eye size={16} className="mr-2" />
+                      Demo
+                    </Button>
+                  )}
                   <Button
                     size="sm"
                     variant="outline"
@@ -185,21 +207,25 @@ const PortfolioSection = () => {
 
                 {/* Action Links */}
                 <div className="flex space-x-3">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600"
-                    onClick={() => window.open(project.demoLink, "_blank")}
-                  >
-                    <ExternalLink size={14} className="mr-2" />
-                    View Demo
-                  </Button>
+                  {(project.title === "ClaimReady" || project.title === "Hyperacing") ? (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600"
+                      onClick={() => window.open(project.demoLink, "_blank")}
+                    >
+                      <ExternalLink size={14} className="mr-2" />
+                      Visit Website
+                    </Button>
+                  ) : null}
                   <Button
                     size="sm"
                     variant="outline"
                     onClick={() => window.open(project.githubLink, "_blank")}
+                    className={project.title === "ClaimReady" || project.title === "Hyperacing" ? "" : "flex-1"}
                   >
                     <Github size={14} />
+                    {project.title === "ClaimReady" || project.title === "Hyperacing" ? "" : "View Code"}
                   </Button>
                 </div>
               </CardContent>

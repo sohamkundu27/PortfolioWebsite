@@ -1,79 +1,76 @@
 import React from "react";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { Building, Calendar } from "lucide-react";
+import { Button } from "../ui/button";
+import { Building, Calendar, ExternalLink, Linkedin } from "lucide-react";
+import bcbsLogo from "../assets/BCBSLOGO.png";
+import fipetLogo from "../assets/FipetLogo.jpeg";
+import uwMadisonLogo from "../assets/uwmadisonlogo.png";
+import outlierLogo from "../assets/outlierlogo.jpeg";
+import waLogo from "../assets/WAlogo.jpeg";
 
 const Experience = () => {
   const experiences = [
     {
-      company: "Tech Solutions Inc.",
-      role: "Senior Full Stack Developer",
-      duration: "2022 - Present",
-      location: "San Francisco, CA",
-      logo: "https://via.placeholder.com/60x60/1261A0/FFFFFF?text=TSI",
+      company: "Blue Cross Blue Shield",
+      role: "AI/Software Engineering Intern",
+      duration: "May 2025 – Present",
+      logo: bcbsLogo,
       description: [
-        "Led development of microservices architecture serving 100K+ users",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews",
-        "Built responsive web applications using React and Node.js"
+        "Built agentic-AI prototypes with Azure AI, integrating .NET/Python services for real-time prior-authorization support",
+        "Pioneered real-time knowledge retrieval pipeline combining keyword & semantic search, cutting Customer Service Rep search time by 90% and accelerating patient access to critical healthcare info, impacting 3M+ members",
+        "Implemented LangChain to orchestrate and deploy Large Language Model-based knowledge retrieval for live CSR use"
       ],
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker"]
+      technologies: ["Azure AI", ".NET", "Python", "LangChain", "LLM", "Semantic Search", "Real-time Systems"]
     },
     {
-      company: "Digital Innovations",
-      role: "Full Stack Developer",
-      duration: "2020 - 2022",
-      location: "Austin, TX",
-      logo: "https://via.placeholder.com/60x60/374151/FFFFFF?text=DI",
+      company: "FiPet",
+      role: "Lead SWE/Co-Founder (Part-time)",
+      duration: "May 2025 – Present",
+      logo: fipetLogo,
       description: [
-        "Developed and maintained 5+ client-facing web applications",
-        "Collaborated with UI/UX team to implement pixel-perfect designs",
-        "Optimized database queries improving application performance by 40%",
-        "Integrated third-party APIs and payment processing systems"
+        "Architecting a mobile app platform with AI-powered, gamified financial education modules tailored for Gen Z audiences",
+        "Built full-stack Firebase and React Native app integrating ML-driven personalization engines for adaptive learning",
+        "Executed and designed full intern hiring pipeline, interviewing and onboarding 10+ engineering candidates",
+        "Led 10-person development team across MVP roadmap and intern management; resulting in 200+ user waitlist"
       ],
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Redis", "Stripe API"]
+      technologies: ["React Native", "Firebase", "ML", "AI", "Gamification", "Mobile Development", "Team Leadership"]
     },
     {
-      company: "StartupXYZ",
-      role: "Frontend Developer",
-      duration: "2019 - 2020",
-      location: "Remote",
-      logo: "https://via.placeholder.com/60x60/059669/FFFFFF?text=XYZ",
+      company: "Machine Learning for NLOS Imaging Research",
+      role: "Research Assistant (Under Prof. Andreas Velten)",
+      duration: "January 2025 – May 2025",
+      logo: uwMadisonLogo,
       description: [
-        "Built responsive single-page applications from scratch",
-        "Implemented modern development workflows and testing strategies",
-        "Worked directly with stakeholders to translate requirements into features",
-        "Maintained high code quality standards and documentation"
+        "Engineered python software for embedded NLOS hardware integrating lasers and SPADs for real-time photon data capture",
+        "Designed and trained CNNs in Python and MATLAB to reconstruct occluded objects from sparse time-of-flight datasets",
+        "Optimized neural network inference, reducing computational overhead by 20% for deployment on edge devices"
       ],
-      technologies: ["React", "JavaScript", "SASS", "Jest", "Cypress"]
+      technologies: ["Python", "MATLAB", "CNN", "Neural Networks", "Computer Vision", "Embedded Systems", "SPADs", "Laser Systems"]
     },
     {
-      company: "CodeCraft Solutions",
-      role: "Junior Developer",
-      duration: "2018 - 2019",
-      location: "New York, NY",
-      logo: "https://via.placeholder.com/60x60/DC2626/FFFFFF?text=CCS",
+      company: "Outlier AI",
+      role: "Software Engineer",
+      duration: "May 2024 – August 2024",
+      logo: outlierLogo,
       description: [
-        "Contributed to development of e-commerce platforms for mid-size businesses",
-        "Assisted in debugging and fixing critical production issues",
-        "Participated in agile development processes and daily standups",
-        "Learned modern web technologies and best practices through mentorship"
+        "Optimized LLM code for 200+ tasks across 3 projects, improving accuracy by 25% while preserving efficiency and edge cases",
+        "Debugged and refactored codebases (Java, Python, JS), integrating RL to fine-tune multi-turn LLM reasoning",
+        "Collaborated with research, engineering, and product teams to optimize model outputs and system accuracy"
       ],
-      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Bootstrap"]
+      technologies: ["LLM", "Java", "Python", "JavaScript", "Reinforcement Learning", "Multi-turn Reasoning", "Model Optimization"]
     },
     {
-      company: "University Tech Lab",
-      role: "Software Development Intern",
-      duration: "2017 - 2018",
-      location: "Boston, MA",
-      logo: "https://via.placeholder.com/60x60/7C3AED/FFFFFF?text=UTL",
+      company: "Wisconsin Autonomous",
+      role: "Software Engineer",
+      duration: "September 2024 – Present",
+      logo: waLogo,
       description: [
-        "Developed internal tools and automation scripts for research projects",
-        "Assisted professors and graduate students with technical implementations",
-        "Created data visualization dashboards for academic research",
-        "Gained hands-on experience with version control and collaborative coding"
+        "Built ML algorithms with OpenCV for real-time lane, cone, and boundary detection in autonomous vehicles",
+        "Integrated perception module into software pipeline coordinating sensor fusion, control systems, and vehicle decision-making",
+        "Collaborated with a 30+ person software team, managing version control, code reviews, and CI/CD workflows in Git"
       ],
-      technologies: ["Python", "JavaScript", "Git", "SQLite", "Chart.js"]
+      technologies: ["OpenCV", "Machine Learning", "Computer Vision", "Autonomous Vehicles", "Sensor Fusion", "Git", "CI/CD", "Real-time Systems"]
     }
   ];
 
@@ -114,7 +111,7 @@ const Experience = () => {
                               <img
                                 src={exp.logo}
                                 alt={`${exp.company} logo`}
-                                className="w-12 h-12 rounded-lg object-cover shadow-md"
+                                className="w-20 h-20 rounded-lg object-contain shadow-md"
                               />
                             </div>
                             <div>
@@ -122,8 +119,6 @@ const Experience = () => {
                               <div className="flex items-center text-gray-600">
                                 <Building size={16} className="mr-2" />
                                 <span className="font-medium">{exp.company}</span>
-                                <span className="mx-2">•</span>
-                                <span>{exp.location}</span>
                               </div>
                             </div>
                           </div>
@@ -145,7 +140,7 @@ const Experience = () => {
                       </ul>
 
                       {/* Technologies */}
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {exp.technologies.map((tech) => (
                           <Badge 
                             key={tech} 
@@ -156,6 +151,30 @@ const Experience = () => {
                           </Badge>
                         ))}
                       </div>
+
+                      {/* Website and LinkedIn Buttons for FiPet */}
+                      {exp.company === "FiPet" && (
+                        <div className="mt-4 flex gap-3">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                            onClick={() => window.open("https://fipet.dev", "_blank")}
+                          >
+                            <ExternalLink size={16} className="mr-2" />
+                            Visit Website
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                            onClick={() => window.open("https://linkedin.com/company/fipet", "_blank")}
+                          >
+                            <Linkedin size={16} className="mr-2" />
+                            LinkedIn
+                          </Button>
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
                 </div>

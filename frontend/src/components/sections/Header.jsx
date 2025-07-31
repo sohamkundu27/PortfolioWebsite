@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import sokuLogo from "../assets/sokulogo.png";
 
 const Header = ({ activeSection, scrollToSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,11 +35,14 @@ const Header = ({ activeSection, scrollToSection }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div
-            className="text-xl font-bold cursor-pointer transition-colors hover:text-blue-600"
-            style={{ color: isScrolled ? "#000" : "#fff" }}
+            className="cursor-pointer transition-all duration-300 hover:scale-105"
             onClick={() => scrollToSection("home")}
           >
-            Your Name
+            <img 
+              src={sokuLogo} 
+              alt="Soku Logo" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

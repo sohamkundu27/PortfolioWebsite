@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Github, FileText, Linkedin, Briefcase, Mail } from "lucide-react";
 import bgImage from "../assets/bgproper-DkkcksB5-DkkcksB5.png";
+import sohamHeadshot from "../assets/sohamheadshot.jpg";
+import sokuLogo from "../assets/sokulogo.png";
 
 const Hero = ({ scrollToSection }) => {
   const socialLinks = [
@@ -25,10 +27,12 @@ const Hero = ({ scrollToSection }) => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Profile Picture */}
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gray-300 border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
-            <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-white text-4xl font-bold">
-              YN
-            </div>
+          <div className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
+            <img 
+              src={sohamHeadshot} 
+              alt="Soham Kundu" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
