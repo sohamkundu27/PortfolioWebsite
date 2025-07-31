@@ -134,33 +134,6 @@ npm run build
 npm run start
 ```
 
-## 📱 Responsive Design
-
-The portfolio is fully responsive with breakpoints:
-
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
-
-## 🔧 Configuration
-
-### PostHog
-
-Update the PostHog API key in `src/app/layout.tsx`:
-
-```typescript
-<PostHogProvider apiKey="your-api-key" options={options}>
-```
-
-### Environment Variables
-
-Create a `.env.local` file for environment variables:
-
-```env
-NEXT_PUBLIC_POSTHOG_KEY=your-posthog-key
-NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
-```
-
 ## 📄 License
 
 This project is licensed under the MIT License.
