@@ -53,13 +53,13 @@ const PortfolioSection = () => {
     },
     {
       id: 5,
-      title: "Project 5",
-      description: "Coming soon...",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
-      technologies: ["Coming Soon"],
+      title: "Smart Budget Tracker",
+      description: "• Built a **full-stack** budget tracking application with .NET 8.0 backend and React frontend for comprehensive financial management\n• Implemented **Entity Framework Core** with MySQL database for robust data persistence and transaction handling\n• Integrated **Chart.js** for dynamic data visualization and **jsPDF** for automated financial report generation\n• Added **AI integration** capabilities using OpenAI SDK for intelligent budget insights and recommendations with **RESTful APIs**",
+      image: "/assets/SBT.png",
+      technologies: [".NET 8.0", "React", "Entity Framework", "MySQL", "Chart.js", "OpenAI"],
       category: "fullstack",
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/sohamkundu27/SBT",
       deployed: false
     },
     {

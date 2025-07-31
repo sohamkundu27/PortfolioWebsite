@@ -19,7 +19,7 @@ const Experience = () => {
     {
       id: 2,
       company: "FiPet",
-      position: "Lead SWE/Co-Founder (Part-time) | fipet.dev",
+      position: "Lead SWE/Co-Founder (Part-time)",
       duration: "May 2025 – Present",
       description: "Architecting a mobile app platform with AI-powered, gamified financial education modules tailored for Gen Z audiences. Built full-stack Firebase and React Native app integrating ML-driven personalization engines for adaptive learning. Executed and designed full intern hiring pipeline, interviewing and onboarding 10+ engineering candidates. Led 10-person development team across MVP roadmap and intern management; resulting in 200+ user waitlist.",
       technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development"],
@@ -67,7 +67,7 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp) => (
-            <Card key={exp.id} className="group hover:shadow-lg transition-all duration-300">
+            <Card key={exp.id} className="group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-gray-200 hover:border-blue-300">
               <CardContent className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   {/* Company Logo */}
@@ -88,7 +88,7 @@ const Experience = () => {
                         <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                           {exp.company}
                         </h3>
-                        <p className="text-lg text-blue-600 font-semibold mb-2">
+                        <p className="text-lg text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">
                           {exp.position}
                         </p>
                         <p className="text-gray-600 text-sm">
@@ -107,7 +107,7 @@ const Experience = () => {
                         <Badge
                           key={techIndex}
                           variant="outline"
-                          className="px-3 py-1 text-sm hover:bg-gray-50 transition-colors cursor-default"
+                          className="px-3 py-1 text-sm hover:bg-blue-50 hover:scale-105 hover:shadow-md transition-all duration-200 cursor-default"
                           style={{ borderColor: "#1261A0", color: "#1261A0" }}
                         >
                           {tech}

@@ -43,7 +43,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
           Soham Kundu
         </h1>
         <p className="text-xl sm:text-2xl text-gray-200 mb-12 leading-relaxed max-w-2xl mx-auto">
-          Computer Engineering + Computer Science @ UW-Madison
+          Computer Engineering + Computer Science @ UW-Madison (Expected 2027)
           <br />
           <span className="text-lg text-gray-300">
             Pursuing a career in Software Engineering & AI/ML.
