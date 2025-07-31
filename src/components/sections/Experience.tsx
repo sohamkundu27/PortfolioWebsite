@@ -135,6 +135,8 @@ const Experience = () => {
                                 {tech}
                               </Badge>
                             ))}
+                            
+
                           </div>
 
                           {/* Website and LinkedIn Buttons for FiPet */}

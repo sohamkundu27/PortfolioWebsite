@@ -1,8 +1,9 @@
 'use client'
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Trophy, Award, Star, ExternalLink } from "lucide-react"
+import { Trophy, Award, Star, ExternalLink, Linkedin } from "lucide-react"
 
 const Awards = () => {
   const awards = [
@@ -30,7 +31,8 @@ const Awards = () => {
       description: "Competed against 20+ teams from UW-Madison in the university startup competition.",
       icon: Star,
       color: "#1261A0",
-      category: "University Startup Competition"
+      category: "University Startup Competition",
+      linkedinPost: "https://www.linkedin.com/posts/activity-7318765475201458177-FNon?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtjxmYBxAK3A_LeiJUpVyZJVtaqUvacUvA"
     }
   ];
 
@@ -117,6 +119,35 @@ const Awards = () => {
                         Read Article
                       </Button>
                     )}
+
+                    {/* LinkedIn Post Button for Badger Launchpad */}
+                    {award.linkedinPost && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors w-full"
+                        onClick={() => window.open(award.linkedinPost, "_blank")}
+                      >
+                        <Linkedin size={16} className="mr-2" />
+                        View LinkedIn Post
+                      </Button>
+                    )}
+                  </div>
+
+                  {/* ClaimReady Tag at bottom */}
+                  <div className="mt-6 flex justify-center">
+                    <Badge
+                      variant="outline"
+                      className="px-4 py-2 text-sm hover:bg-green-50 hover:scale-105 hover:shadow-md transition-all duration-200 cursor-pointer bg-green-100 border-green-500 text-green-700 text-center"
+                      onClick={() => {
+                        const portfolioSection = document.getElementById('portfolio');
+                        if (portfolioSection) {
+                          portfolioSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                    >
+                      ClaimReady
+                    </Badge>
                   </div>
                 </div>
               </CardContent>
