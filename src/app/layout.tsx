@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Soham Kundu - Software Engineer & AI/ML Developer',
+  title: "Soham Kundu's Portfolio",
   description: 'Full Stack Developer focused on AI-powered systems and real-world impact. Computer Engineering + Computer Science @ UW-Madison.',
   keywords: ['Software Engineer', 'AI/ML', 'Full Stack Developer', 'UW-Madison', 'React', 'Next.js', 'Python'],
   authors: [{ name: 'Soham Kundu' }],
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://sohamkundu.com',
-    title: 'Soham Kundu - Software Engineer & AI/ML Developer',
+    title: "Soham Kundu's Portfolio",
     description: 'Full Stack Developer focused on AI-powered systems and real-world impact.',
-    siteName: 'Soham Kundu Portfolio',
+    siteName: "Soham Kundu's Portfolio",
     images: [
       {
         url: '/assets/sohamheadshot.jpg',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Soham Kundu - Software Engineer & AI/ML Developer',
+    title: "Soham Kundu's Portfolio",
     description: 'Full Stack Developer focused on AI-powered systems and real-world impact.',
     images: ['/assets/sohamheadshot.jpg'],
   },
