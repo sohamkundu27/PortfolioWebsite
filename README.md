@@ -1,184 +1,174 @@
-# Portfolio Website
+# Soham Kundu Portfolio
 
-A sleek, responsive personal portfolio website built with React and Tailwind CSS.
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features server-side rendering (SSR), SEO optimization, and PostHog analytics integration.
 
 ## 🚀 Features
 
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Responsive**: Fully responsive across desktop, tablet, and mobile devices
-- **Interactive Sections**:
-  - Hero section with tech background
-  - About section with professional bio
-  - Experience timeline with career highlights
-  - Skills showcase with progress bars
-  - Portfolio grid with 5 featured projects
-  - Contact form with validation and notifications
-- **Color Scheme**: Black, gray, and blue (#1261A0) theme
-- **Smooth Navigation**: Scroll-to-section navigation with active states
-
-## 🛠️ Technologies Used
-
-- **Frontend**: React 19, React Router DOM
-- **Styling**: Tailwind CSS, Radix UI components
-- **Icons**: Lucide React
-- **Notifications**: Sonner (toast notifications)
-- **Build Tool**: Create React App with CRACO
-- **Deployment**: Optimized for Vercel
+- **Next.js 14** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **Server-Side Rendering (SSR)** for better SEO
+- **PostHog Analytics** integration
+- **Responsive Design** for all devices
+- **SEO Optimized** with meta tags and Open Graph
+- **Smooth Scrolling** navigation
+- **Interactive Components** with hover effects
 
 ## 📁 Project Structure
 
 ```
-portfolio-website/
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── sections/
-│   │   │   │   ├── Header.jsx
-│   │   │   │   ├── Hero.jsx
-│   │   │   │   ├── About.jsx
-│   │   │   │   ├── Experience.jsx
-│   │   │   │   ├── Skills.jsx
-│   │   │   │   ├── PortfolioSection.jsx
-│   │   │   │   ├── Contact.jsx
-│   │   │   │   └── Footer.jsx
-│   │   │   ├── ui/ (Radix UI components)
-│   │   │   └── Portfolio.jsx
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.css
-│   ├── package.json
-│   └── tailwind.config.js
-├── vercel.json
-├── package.json
-└── README.md
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with PostHog provider
+│   ├── page.tsx            # Main page component
+│   └── globals.css         # Global styles
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── badge.tsx
+│   ├── sections/           # Page sections
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Awards.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   ├── PortfolioSection.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── Portfolio.tsx       # Main portfolio component
+│   └── SectionTracker.tsx  # PostHog section tracking
+├── hooks/
+│   └── usePostHog.ts      # PostHog tracking hook
+└── lib/
+    └── utils.ts           # Utility functions
 ```
 
-## 🚀 Quick Start
+## 🛠️ Technologies Used
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Icons**: Lucide React
+- **Analytics**: PostHog
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- Yarn package manager
 
-### Local Development
+- Node.js 18+
+- npm or yarn
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd portfolio-website
-   ```
+### Installation
 
-2. **Install dependencies**
-   ```bash
-   cd frontend
-   yarn install
-   ```
-
-3. **Start development server**
-   ```bash
-   yarn start
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
-
-### Building for Production
+1. Clone the repository:
 
 ```bash
-cd frontend
-yarn build
+git clone <repository-url>
+cd PortfolioWebsite
 ```
 
-## 🌐 Deployment
+2. Install dependencies:
 
-### Deploy to Vercel
+```bash
+npm install
+```
 
-1. **Install Vercel CLI** (if not already installed)
-   ```bash
-   npm install -g vercel
-   ```
+3. Run the development server:
 
-2. **Deploy from root directory**
-   ```bash
-   vercel
-   ```
+```bash
+npm run dev
+```
 
-3. **Follow the prompts** to configure your deployment
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Alternative: GitHub Integration
+## 📦 Available Scripts
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically deploy from the main branch
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
 ## 🎨 Customization
 
-### Personal Information
-Update the placeholder content in each section component:
+### Colors
 
-- **Hero Section**: `frontend/src/components/sections/Hero.jsx`
-  - Replace "Your Name" with your actual name
-  - Update the tagline and description
-  - Add your real social media links
+The primary color scheme uses `#1261A0` (blue). Update this in the components and CSS variables.
 
-- **About Section**: `frontend/src/components/sections/About.jsx`
-  - Replace placeholder bio with your story
-  - Update experience stats
-  - Add your professional headshot
+### Content
 
-- **Experience**: `frontend/src/components/sections/Experience.jsx`
-  - Replace with your actual work experience
-  - Update company names, roles, and dates
-  - Modify accomplishment descriptions
+- Update personal information in each section component
+- Replace images in the `public/assets/` directory
+- Modify the resume PDF in `public/SohamKunduResume.pdf`
 
-- **Skills**: `frontend/src/components/sections/Skills.jsx`
-  - Adjust skill levels and categories
-  - Add or remove technologies
-  - Update proficiency percentages
+### SEO
 
-- **Portfolio**: `frontend/src/components/sections/PortfolioSection.jsx`
-  - Replace with your actual projects
-  - Update project descriptions and images
-  - Add real demo and GitHub links
+Update metadata in:
 
-- **Contact**: `frontend/src/components/sections/Contact.jsx`
-  - Update contact information
-  - Replace email and phone placeholders
-  - Modify location information
+- `src/app/layout.tsx` (global metadata)
+- `src/app/page.tsx` (page-specific metadata)
 
-### Styling
-- Colors can be modified in `frontend/tailwind.config.js`
-- Custom styles in `frontend/src/App.css` and `frontend/src/index.css`
+## 📊 Analytics
 
-### Images
-- Replace placeholder images with your actual photos
-- Hero background image can be changed in `Hero.jsx`
-- Profile pictures in About and Hero sections
+PostHog analytics is integrated with:
+
+- Resume download tracking
+- Section view tracking
+- Page view tracking
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+### Manual Deployment
+
+```bash
+npm run build
+npm run start
+```
 
 ## 📱 Responsive Design
 
-The website is fully responsive with breakpoints for:
-- **Mobile**: 320px - 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: 1024px+
+The portfolio is fully responsive with breakpoints:
 
-## 🔧 Configuration Files
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
 
-- **vercel.json**: Vercel deployment configuration
-- **tailwind.config.js**: Tailwind CSS configuration
-- **craco.config.js**: CRACO configuration for customization
+## 🔧 Configuration
+
+### PostHog
+
+Update the PostHog API key in `src/app/layout.tsx`:
+
+```typescript
+<PostHogProvider apiKey="your-api-key" options={options}>
+```
+
+### Environment Variables
+
+Create a `.env.local` file for environment variables:
+
+```env
+NEXT_PUBLIC_POSTHOG_KEY=your-posthog-key
+NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
+```
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
-## 🤝 Contributing
+## 👤 Author
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+**Soham Kundu**
 
-## 📞 Support
-
-If you have any questions or need help with customization, feel free to reach out!
-
----
-
+- Email: skundu6@wisc.edu
+- GitHub: [@sohamkundu27](https://github.com/sohamkundu27)
+- LinkedIn: [sohamkundu27](https://linkedin.com/in/sohamkundu27)
