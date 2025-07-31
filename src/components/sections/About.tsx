@@ -18,7 +18,7 @@ const About = () => {
             <CardContent className="p-8 flex items-center justify-center h-full">
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-md">
                 <img
-                  src="/assets/sohamSenior.jpg"
+                  src="/assets/sohamsenior.jpg"
                   alt="Soham Kundu"
                   className="w-full h-full object-cover"
                 />
