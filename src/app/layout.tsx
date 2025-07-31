@@ -16,9 +16,10 @@ export const metadata: Metadata = {
   creator: 'Soham Kundu',
   icons: {
     icon: [
-      { url: '/icon.jpg', type: 'image/jpeg' },
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/favicon.ico' },
+      { url: '/icon.jpg', type: 'image/jpeg' }
     ],
+    shortcut: '/favicon.ico',
     apple: '/icon.jpg',
   },
   openGraph: {
