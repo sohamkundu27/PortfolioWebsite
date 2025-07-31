@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from "react"
-import PostHogProviderWrapper from "./PostHogProvider"
 import Header from "./sections/Header"
 import Hero from "./sections/Hero"
 import About from "./sections/About"
@@ -40,19 +39,17 @@ const Portfolio = () => {
   }, [])
 
   return (
-    <PostHogProviderWrapper>
-      <div className="min-h-screen">
-        <Header scrollToSection={scrollToSection} />
-        <Hero scrollToSection={scrollToSection} />
-        <About />
-        <Awards />
-        <Experience />
-        <Skills />
-        <PortfolioSection />
-        <Contact />
-        <Footer scrollToSection={scrollToSection} />
-      </div>
-    </PostHogProviderWrapper>
+    <div className="min-h-screen">
+      <Header scrollToSection={scrollToSection} />
+      <Hero scrollToSection={scrollToSection} />
+      <About />
+      <Awards />
+      <Experience />
+      <Skills />
+      <PortfolioSection />
+      <Contact />
+      <Footer scrollToSection={scrollToSection} />
+    </div>
   )
 }
 

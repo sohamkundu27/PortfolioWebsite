@@ -2,18 +2,15 @@
 
 import { Button } from "@/components/ui/button"
 import { Github, FileText, Linkedin, Briefcase, Mail } from "lucide-react"
-import { usePostHogTracking } from "@/hooks/usePostHog"
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void
 }
 
 const Hero = ({ scrollToSection }: HeroProps) => {
-  const { trackResumeDownload } = usePostHogTracking()
-  
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
-    { icon: FileText, label: "Resume", href: "/SohamKunduResume.pdf", onClick: trackResumeDownload },
+    { icon: FileText, label: "Resume", href: "/SohamKunduResume.pdf" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sohamkundu27/" },
     { icon: Briefcase, label: "Portfolio", onClick: () => scrollToSection("portfolio") },
     { icon: Mail, label: "Contact", onClick: () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }) },
