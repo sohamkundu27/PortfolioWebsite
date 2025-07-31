@@ -62,29 +62,6 @@ src/
 - Node.js 18+
 - npm or yarn
 
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-cd PortfolioWebsite
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
 ## 📦 Available Scripts
 
 - `npm run dev` - Start development server
