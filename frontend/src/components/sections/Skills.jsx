@@ -57,8 +57,20 @@ const Skills = () => {
                     <Badge 
                       key={skillIndex} 
                       variant="outline"
-                      className="px-3 py-1 text-sm hover:bg-gray-50 transition-colors cursor-default"
-                      style={{ borderColor: category.color, color: category.color }}
+                      className="px-3 py-1 text-sm transition-all duration-300 cursor-default hover:scale-105 hover:shadow-md"
+                      style={{ 
+                        borderColor: category.color, 
+                        color: category.color,
+                        backgroundColor: 'transparent'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = `${category.color}15`;
+                        e.target.style.transform = 'translateY(-2px)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = 'transparent';
+                        e.target.style.transform = 'translateY(0)';
+                      }}
                     >
                       {skill}
                     </Badge>

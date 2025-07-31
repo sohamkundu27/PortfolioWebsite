@@ -6,8 +6,7 @@ const Footer = ({ scrollToSection }) => {
 
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/sohamkundu27" },
-    { icon: Mail, label: "Email", href: "mailto:skundu6@wisc.edu" }
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/sohamkundu27" }
   ];
 
   const quickLinks = [
@@ -25,7 +24,7 @@ const Footer = ({ scrollToSection }) => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Your Name</h3>
+            <h3 className="text-2xl font-bold">Soham Kundu</h3>
             <p className="text-gray-400 leading-relaxed">
               Full Stack Developer passionate about creating innovative web solutions 
               and delivering exceptional user experiences.
@@ -67,17 +66,16 @@ const Footer = ({ scrollToSection }) => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p>📍 San Francisco, CA</p>
-              <p>📧 your.email@example.com</p>
-              <p>📱 +1 (555) 123-4567</p>
+              <p>📧 skundu6@wisc.edu</p>
+              <p>📱 +1 (763) 406-1195</p>
             </div>
             <div className="mt-6">
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => window.open("mailto:skundu6@wisc.edu", "_blank")}
                 className="inline-flex items-center px-4 py-2 border border-blue-600 rounded-lg text-blue-400 hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105"
               >
                 <Mail size={16} className="mr-2" />
-                Send Message
+                Send Email
               </button>
             </div>
           </div>
@@ -87,13 +85,9 @@ const Footer = ({ scrollToSection }) => {
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Soham Kundu. All rights reserved.
             </div>
-            <div className="flex items-center text-gray-400 text-sm">
-              <span>Made with</span>
-              <Heart size={14} className="mx-1 text-red-500 animate-pulse" />
-              <span>using React & Tailwind CSS</span>
-            </div>
+
           </div>
         </div>
       </div>

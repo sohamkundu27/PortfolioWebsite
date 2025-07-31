@@ -2,54 +2,58 @@ import React, { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
-import { ExternalLink, Github, Eye } from "lucide-react";
+import { ExternalLink, Github, Eye, Play } from "lucide-react";
+import crPic from "../assets/CRPIC.png";
+import hrPic from "../assets/HRPIC.png";
+import robotArmPic from "../assets/RobotArmPic.png";
+import ghmsPic from "../assets/GHMS3.jpg";
 
 const PortfolioSection = () => {
-  const [activeFilter, setActiveFilter] = useState("all");
+
 
   const projects = [
     {
       id: 1,
       title: "ClaimReady",
-      description: "Co-founded a 5x award-winning AI startup web app to cut insurance claim valuation time from 20+ hrs to minutes. Utilized YOLO11 for detection, Google Lens API for identification/pricing, and Supabase for auth; processed 1200+ images. Deployed via Docker on an AWS EC2 instance; scaled to support our 300+ users. Recognized as 'investor-ready' by judges; acknowledged by YC's Jared Friedman, Ankit Gupta, and UW-Madison CS Dept.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["YOLO11", "Google Lens API", "Supabase", "Docker", "AWS EC2"],
+      description: "• Co-founded a 2x award-winning AI startup web app to cut insurance claim valuation time from **20+ hrs to minutes**\n• Utilized YOLO11 for detection, Gemini API for identification/pricing, and Supabase for auth; processed 1200+ images\n• Deployed via **Docker** on an **AWS EC2** instance; scaled to support our **350+ users**\n• Recognized as 'investor-ready' by judges; acknowledged by YC's Jared Friedman, Ankit Gupta, and UW-Madison CS Dept",
+      image: crPic,
+      technologies: ["YOLO11", "Google Lens API", "Supabase", "Docker", "AWS EC2", "AI/ML"],
       category: "ai",
       demoLink: "https://claim-ready.vercel.app",
-      githubLink: "#",
+      githubLink: "https://github.com/sohamkundu27/MadData25",
       deployed: true
     },
     {
       id: 2,
       title: "Hyperacing",
-      description: "Built and scaled Go backend with REST APIs for a real-time F1 daily fantasy sports app with 200+ active users. Integrated Firebase Auth for secure user login and session management, and used F1 websockets for live race telemetry data. Engineered a Next.js frontend with dynamic dashboards for AI-powered predictions, betting trends, and expert insights.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Go", "Next.js", "Firebase Auth", "WebSockets", "REST APIs"],
+      description: "• Built and scaled Go backend with REST APIs for a real-time F1 daily fantasy sports app with **200+ active users**\n• Integrated Firebase Auth for secure user login and session management, and used F1 websockets for live race telemetry data\n• Engineered a Next.js frontend with dynamic dashboards for AI-powered predictions, betting trends, and expert insights",
+      image: hrPic,
+      technologies: ["Go", "Next.js", "Firebase Auth", "WebSockets", "REST APIs", "F1 API"],
       category: "fullstack",
       demoLink: "https://hyperacing.us",
-      githubLink: "#",
+      githubLink: "https://github.com/B-a-1-a/HypeRacing",
       deployed: true
     },
     {
       id: 3,
       title: "Voice-Controlled MCP Robot Arm",
-      description: "Built a full-stack voice interface to control a robot arm by transcribing real-time speech into structured robot commands. Engineered an LLM task planner to convert prompts like 'clear the table' into JSON robot actions executed via MCP. Validated the entire pipeline with async audio input and physics-based simulation, ensuring robust task completion.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["LLM", "Voice Recognition", "MCP", "Robot Control", "Python"],
+      description: "• Built a **full-stack** voice interface to control a robot arm by transcribing real-time speech into structured robot commands\n• Engineered an **LLM** task planner to convert prompts like 'clear the table' into JSON robot actions executed via MCP\n• Validated the entire pipeline with async audio input and physics-based simulation, ensuring robust task completion",
+      image: robotArmPic,
+      technologies: ["LLM", "Voice Recognition", "MCP", "Robot Control", "Python", "Real-time Systems"],
       category: "ai",
-      demoLink: "#",
-      githubLink: "#",
+      demoLink: "https://www.youtube.com/watch?v=ek3yyC_W1UA&feature=youtu.be",
+      githubLink: "https://github.com/sohamkundu27/UCBerkeleyAIHackathon",
       deployed: false
     },
     {
       id: 4,
       title: "Greenhouse IoT Monitoring System",
-      description: "Built IoT greenhouse system tracking temp, humidity, and brightness on Raspberry Pi in Python, optimizing GPIO control. Configured Azure IoT Hub and REST APIs for real-time transmission of over 10K data points daily. Deployed a Dockerized Django-React app on Azure App Services, enabling remote monitoring by parents in India.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop",
-      technologies: ["Raspberry Pi", "Python", "Azure IoT Hub", "Django", "React"],
+      description: "• Built IoT greenhouse system tracking temp, humidity, and brightness on Raspberry Pi in Python, optimizing GPIO control\n• Configured Azure IoT Hub and **REST APIs** for real-time transmission of over 10K data points daily\n• Deployed a **Dockerized Django-React** app on Azure App Services, enabling remote monitoring by parents in India",
+      image: ghmsPic,
+      technologies: ["Raspberry Pi", "Python", "Azure IoT Hub", "Django", "React", "Docker"],
       category: "iot",
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/sohamkundu27/GIoTMS",
       deployed: false
     },
     {
@@ -76,16 +80,9 @@ const PortfolioSection = () => {
     }
   ];
 
-  const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "ai", label: "AI/ML" },
-    { id: "fullstack", label: "Full Stack" },
-    { id: "iot", label: "IoT" }
-  ];
 
-  const filteredProjects = activeFilter === "all" 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+
+
 
   return (
     <section id="portfolio" className="py-20 bg-white">
@@ -98,31 +95,11 @@ const PortfolioSection = () => {
           </p>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <Button
-              key={category.id}
-              variant={activeFilter === category.id ? "default" : "outline"}
-              onClick={() => setActiveFilter(category.id)}
-              className={`transition-all duration-300 ${
-                activeFilter === category.id
-                  ? "text-white"
-                  : "text-gray-700 hover:text-white"
-              }`}
-              style={{
-                backgroundColor: activeFilter === category.id ? "#1261A0" : "transparent",
-                borderColor: "#1261A0"
-              }}
-            >
-              {category.label}
-            </Button>
-          ))}
-        </div>
+
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <Card 
               key={project.id} 
               className={`group shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0 overflow-hidden ${
@@ -149,7 +126,7 @@ const PortfolioSection = () => {
 
                 {/* Overlay with Actions */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  {(project.title === "ClaimReady" || project.title === "Hyperacing") ? (
+                  {project.title === "ClaimReady" || project.title === "Hyperacing" ? (
                     <Button
                       size="sm"
                       variant="outline"
@@ -158,6 +135,16 @@ const PortfolioSection = () => {
                     >
                       <ExternalLink size={16} className="mr-2" />
                       Website
+                    </Button>
+                  ) : project.title === "Voice-Controlled MCP Robot Arm" ? (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="text-white border-white hover:bg-white hover:text-gray-900"
+                      onClick={() => window.open(project.demoLink, "_blank")}
+                    >
+                      <Play size={16} className="mr-2" />
+                      Watch Demo
                     </Button>
                   ) : (
                     <Button
@@ -188,9 +175,15 @@ const PortfolioSection = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="text-gray-600 mb-4 space-y-2">
+                  {project.description.split('\n').map((line, index) => (
+                    <p key={index} className="text-sm">
+                      {line.split('**').map((part, partIndex) => 
+                        partIndex % 2 === 0 ? part : <strong key={partIndex}>{part}</strong>
+                      )}
+                    </p>
+                  ))}
+                </div>
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -207,7 +200,7 @@ const PortfolioSection = () => {
 
                 {/* Action Links */}
                 <div className="flex space-x-3">
-                  {(project.title === "ClaimReady" || project.title === "Hyperacing") ? (
+                  {project.title === "ClaimReady" || project.title === "Hyperacing" ? (
                     <Button
                       size="sm"
                       variant="outline"
@@ -217,15 +210,25 @@ const PortfolioSection = () => {
                       <ExternalLink size={14} className="mr-2" />
                       Visit Website
                     </Button>
+                  ) : project.title === "Voice-Controlled MCP Robot Arm" ? (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600"
+                      onClick={() => window.open(project.demoLink, "_blank")}
+                    >
+                      <Play size={14} className="mr-2" />
+                      Watch Demo
+                    </Button>
                   ) : null}
                   <Button
                     size="sm"
                     variant="outline"
                     onClick={() => window.open(project.githubLink, "_blank")}
-                    className={project.title === "ClaimReady" || project.title === "Hyperacing" ? "" : "flex-1"}
+                    className={project.title === "ClaimReady" || project.title === "Hyperacing" || project.title === "Voice-Controlled MCP Robot Arm" ? "" : "flex-1"}
                   >
                     <Github size={14} />
-                    {project.title === "ClaimReady" || project.title === "Hyperacing" ? "" : "View Code"}
+                    {project.title === "ClaimReady" || project.title === "Hyperacing" || project.title === "Voice-Controlled MCP Robot Arm" ? "" : "View Code"}
                   </Button>
                 </div>
               </CardContent>
@@ -239,7 +242,7 @@ const PortfolioSection = () => {
             size="lg"
             variant="outline"
             className="text-blue-600 border-blue-600 hover:bg-blue-50"
-            onClick={() => window.open("#", "_blank")}
+            onClick={() => window.open("https://github.com/sohamkundu27", "_blank")}
           >
             View All Projects on GitHub
             <ExternalLink size={18} className="ml-2" />
