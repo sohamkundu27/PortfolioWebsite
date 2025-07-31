@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Awards from "./sections/Awards";
 import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
 import PortfolioSection from "./sections/PortfolioSection";
@@ -14,7 +15,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "experience", "skills", "portfolio", "contact"];
+      const sections = ["home", "about", "awards", "experience", "skills", "portfolio", "contact"];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -49,6 +50,7 @@ const Portfolio = () => {
       <main>
         <Hero scrollToSection={scrollToSection} />
         <About />
+        <Awards />
         <Experience />
         <Skills />
         <PortfolioSection />

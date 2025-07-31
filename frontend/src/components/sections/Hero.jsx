@@ -4,14 +4,17 @@ import { Github, FileText, Linkedin, Briefcase, Mail } from "lucide-react";
 import bgImage from "../assets/bgproper-DkkcksB5-DkkcksB5.png";
 import sohamHeadshot from "../assets/sohamheadshot.jpg";
 import sokuLogo from "../assets/sokulogo.png";
+import { usePostHogTracking } from "../../hooks/usePostHog";
 
 const Hero = ({ scrollToSection }) => {
+  const { trackResumeDownload } = usePostHogTracking();
+  
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
-    { icon: FileText, label: "Resume", href: "/SohamKunduResume.pdf" },
+    { icon: FileText, label: "Resume", href: "/SohamKunduResume.pdf", onClick: trackResumeDownload },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sohamkundu27/" },
     { icon: Briefcase, label: "Portfolio", onClick: () => scrollToSection("portfolio") },
-    { icon: Mail, label: "Contact", onClick: () => scrollToSection("contact") },
+    { icon: Mail, label: "Contact", onClick: () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }) },
   ];
 
   return (
@@ -58,6 +61,7 @@ const Hero = ({ scrollToSection }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
+              onClick={onClick}
             >
               <Button
                 variant="outline"

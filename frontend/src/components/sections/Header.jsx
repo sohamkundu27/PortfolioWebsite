@@ -17,6 +17,7 @@ const Header = ({ activeSection, scrollToSection }) => {
 
   const navItems = [
     { id: "about", label: "About Me" },
+    { id: "awards", label: "Awards" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "portfolio", label: "Portfolio" },

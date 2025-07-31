@@ -13,8 +13,7 @@ const Footer = ({ scrollToSection }) => {
     { label: "About", onClick: () => scrollToSection("about") },
     { label: "Experience", onClick: () => scrollToSection("experience") },
     { label: "Skills", onClick: () => scrollToSection("skills") },
-    { label: "Portfolio", onClick: () => scrollToSection("portfolio") },
-    { label: "Contact", onClick: () => scrollToSection("contact") }
+    { label: "Portfolio", onClick: () => scrollToSection("portfolio") }
   ];
 
   return (
@@ -26,8 +25,7 @@ const Footer = ({ scrollToSection }) => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Soham Kundu</h3>
             <p className="text-gray-400 leading-relaxed">
-              Full Stack Developer passionate about creating innovative web solutions 
-              and delivering exceptional user experiences.
+              Full Stack Developer focused on AI-powered systems and real-world impact.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map(({ icon: Icon, label, href }) => (

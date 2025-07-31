@@ -7,6 +7,7 @@ import crPic from "../assets/CRPIC.png";
 import hrPic from "../assets/HRPIC.png";
 import robotArmPic from "../assets/RobotArmPic.png";
 import ghmsPic from "../assets/GHMS3.jpg";
+import SectionTracker from "../SectionTracker";
 
 const PortfolioSection = () => {
 
@@ -85,8 +86,9 @@ const PortfolioSection = () => {
 
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionTracker sectionId="portfolio">
+      <section id="portfolio" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
           <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#1261A0" }} />
@@ -250,6 +252,7 @@ const PortfolioSection = () => {
         </div>
       </div>
     </section>
+    </SectionTracker>
   );
 };
 
