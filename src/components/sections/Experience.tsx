@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Linkedin } from "lucide-react"
+import { ExternalLink, Linkedin, Calendar } from "lucide-react"
 
 const Experience = () => {
   const experiences = [
@@ -67,7 +67,7 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp) => (
-            <Card key={exp.id} className="group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-gray-200 hover:border-blue-300">
+            <Card key={exp.id} className="group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border-gray-200 hover:border-blue-300 rounded-xl border-2">
               <CardContent className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   {/* Company Logo */}
@@ -91,9 +91,10 @@ const Experience = () => {
                         <p className="text-lg text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">
                           {exp.position}
                         </p>
-                        <p className="text-gray-600 text-sm">
-                          {exp.duration}
-                        </p>
+                        <div className="flex items-center gap-2 text-gray-600 text-sm">
+                          <Calendar size={16} className="text-gray-500" />
+                          <span>{exp.duration}</span>
+                        </div>
                       </div>
                     </div>
 

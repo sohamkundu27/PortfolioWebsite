@@ -64,13 +64,13 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      title: "Project 6",
-      description: "Coming soon...",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["Coming Soon"],
-      category: "fullstack",
+      title: "Machine Learning Activity Recommender",
+      description: "• Built a **full-stack Flask** web app with **MultiOutput Random Forest** classifier trained on 10K+ datapoints for activity recommendations\n• Achieved ~75% accuracy and 25% Hamming loss using **Scikit-learn** with 80/20 train-test split for multi-label classification\n• Implemented **confidence-based scoring** and **SQL database** storage for user behavior analysis and performance improvement",
+      image: "/assets/MLactivity reocmender.png",
+      technologies: ["Flask", "Scikit-learn", "Random Forest", "SQL", "Machine Learning", "Multi-label Classification"],
+      category: "ai",
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/sohamkundu27/ML-Activities-Recommender-System",
       deployed: false
     }
   ]
