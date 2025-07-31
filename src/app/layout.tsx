@@ -15,11 +15,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'Soham Kundu' }],
   creator: 'Soham Kundu',
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.jpg', type: 'image/jpeg' }
-    ],
-    shortcut: '/favicon.ico',
+    icon: '/icon.jpg',
+    shortcut: '/icon.jpg',
     apple: '/icon.jpg',
   },
   openGraph: {
