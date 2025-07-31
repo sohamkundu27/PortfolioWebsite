@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   keywords: ['Software Engineer', 'AI/ML', 'Full Stack Developer', 'UW-Madison', 'React', 'Next.js', 'Python'],
   authors: [{ name: 'Soham Kundu' }],
   creator: 'Soham Kundu',
+  icons: {
+    icon: [
+      { url: '/icon.jpg', type: 'image/jpeg' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ],
+    apple: '/icon.jpg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
