@@ -10,7 +10,7 @@ const Awards = () => {
     {
       id: 1,
       title: "1st Place MadData25 Hackathon",
-      description: "24 hour hackathon with 30+ teams and 120+ competitors. Won first place and best presentation for ClaimReady.",
+      description: "24 hour hackathon with 30+ teams and 120+ competitors. Won first place and best presentation.",
       icon: Trophy,
       color: "#1261A0",
       category: "Hackathon",
@@ -19,7 +19,7 @@ const Awards = () => {
     {
       id: 2,
       title: "Top 3 at University Madness Startup Pitch Competition",
-      description: "Achieved Top 3 and Audience Favorite among 30+ teams across 9 universities.",
+      description: "Placed Top 3 and were the Audience Favorite among 30+ teams across 9 universities.",
       icon: Award,
       color: "#1261A0",
       category: "National Startup Competition",
@@ -28,7 +28,7 @@ const Awards = () => {
     {
       id: 3,
       title: "Top 3 at Badger Launchpad Startup Pitch Competition",
-      description: "Competed against 20+ teams from UW-Madison in the university startup competition.",
+      description: "Competed against 20+ teams from UW-Madison in a university startup competition.",
       icon: Star,
       color: "#1261A0",
       category: "University Startup Competition",
@@ -43,7 +43,7 @@ const Awards = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
           <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#1261A0" }} />
           <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-            Recognition for innovative projects and entrepreneurial achievements
+            Recognition for technical excellence and innovative software engineering projects
           </p>
         </div>
 
