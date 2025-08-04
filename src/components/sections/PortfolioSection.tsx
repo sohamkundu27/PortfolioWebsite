@@ -21,12 +21,12 @@ const PortfolioSection = () => {
     {
       id: 2,
       title: "Hyperacing",
-      description: "• Built and scaled Go backend with REST APIs for a real-time F1 daily fantasy sports app with **200+ active users**\n• Integrated Firebase Auth for secure user login and session management, and used F1 websockets for live race telemetry data\n• Engineered a Next.js frontend with dynamic dashboards for AI-powered predictions, betting trends, and expert insights",
+      description: "• Built and scaled a Go backend for a Formula 1 analytics platform with AI insights and live telemetry to **200+ users**\n• Integrated Firebase Auth for secure login and session management, and used F1 WebSockets to stream real-time race data\n• Engineered a Next.js frontend with dynamic dashboards, a live F1 news feed, and live analytics",
       image: "/assets/HRPIC.png",
       technologies: ["Go", "Next.js", "Firebase Auth", "WebSockets", "REST APIs", "F1 API"],
       category: "fullstack",
       demoLink: "https://hyperacing.us",
-      githubLink: "https://github.com/B-a-1-a/HypeRacing",
+      githubLink: "https://github.com/Hype-Racing",
       deployed: true
     },
     {
