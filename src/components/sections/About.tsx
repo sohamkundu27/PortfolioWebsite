@@ -42,27 +42,27 @@ const About = () => {
                   </p>
                   
                   <p>
-                    At Blue Cross Blue Shield, I developed an in-call support app for customer service reps, transcribing live calls, retrieving answers from internal databases, and delivering AI-generated responses in under 5 seconds, serving 3M+ members. I engineered a Python-based RAG pipeline with LangChain (custom agents, RetrievalQA) using hybrid keyword + semantic search, Azure real-time transcription, and Azure OpenAI LLMs, cutting CSR lookup time by 95%+. I integrated the pipeline into a desktop app with automated post-call summaries for seamless real-time call assistance.
+                    At Blue Cross Blue Shield, I built an in-call AI assistant that transcribes calls, searches internal databases, and generates responses in under 5 seconds, cutting Customer Service Representatives' lookup time by 95%, impacting 3M+ members. I engineered the full RAG pipeline with LangChain, Azure OpenAI, and real-time transcription, integrating it into a desktop app with automated post-call summaries.
                   </p>
                   
                   <p>
-                    As a Machine Learning Researcher in the Computational Optics Group, I developed ML pipelines with optical sensor data, enabling non-line-of-sight object imaging and reconstruction. I achieved 20% reduction in neural network inference overhead, improving edge deployment feasibility on embedded systems. I engineered embedded Python software for lasers and high-speed cameras for real-time photon capture, and trained/fine-tuned convolutional neural networks in Python/MATLAB on 3 large-scale datasets with varied scenes, noise, and sensor setups.
+                    As a Machine Learning Researcher in the Computational Optics Group, I developed ML pipelines for non-line-of-sight imaging, optimized neural network inference by 20% for embedded deployment, and trained models on large-scale, noisy datasets.
                   </p>
                   
                   <p>
-                    I co-founded ClaimReady, a 5x award-winning AI web application that generates complete home inventories and reduces insurance claim valuation time from 20+ hours to under 2 minutes, accelerating post-disaster recovery for homeowners and adjusters. We scaled to 350+ users by deploying an image valuation pipeline via Docker AWS EC2, using YOLO11 for detection, Gemini API for brand/price identification, and SupabaseDB; processing 1,500+ images and valuing $800K+ in items. We were recognized as "investor-ready" by judges and acknowledged by YC partners and UW-Madison CS Dept for technical excellence.
+                    I co-founded ClaimReady, a 5x award-winning AI web app that cuts insurance claim valuation from 20+ hours to under 2 minutes. We scaled to 350+ users, valued $800K+ in items, and deployed a YOLO11 + Gemini pipeline on AWS, earning recognition from YC partners and the UW–Madison CS dept.
                   </p>
                   
                   <p>
-                    Check it out here: <a href="https://www.useclaimready.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.useclaimready.ai/</a>
+                    Check it out here: <a href="https://www.useclaimready.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">useclaimready.ai</a>
                   </p>
                   
                   <p>
-                    As Lead SWE & Co-founder of FiPet, I architected a cross-platform mobile app with AI-powered, gamified financial education modules tailored for Gen Z audiences. We scaled pre-launch to a 200+ user waitlist using ML-driven personalization for adaptive learning. I led a 15-person engineering team to build the MVP using React Native, Firebase (Firestore, Auth, Cloud Functions), and AI/LLM pipelines for automated bonus quest generation and progress tracking.
+                    As Lead SWE & Co-founder of FiPet, I built a cross-platform mobile app delivering gamified financial literacy for Gen Z. We grew a 200+ user waitlist pre-launch and shipped a React Native + Firebase MVP with AI-powered personalization and automated quest generation.
                   </p>
                   
                   <p>
-                    Check it out here: <a href="https://www.fipet.dev/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://www.fipet.dev/</a>
+                    Check it out here: <a href="https://www.fipet.dev/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">fipet.dev</a>
                   </p>
                 </div>
               </div>

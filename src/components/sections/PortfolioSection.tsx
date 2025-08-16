@@ -10,20 +10,20 @@ const PortfolioSection = () => {
     {
       id: 1,
       title: "ClaimReady",
-      description: "• Co-founded a 2x award-winning AI startup web app to cut insurance claim valuation time from **20+ hrs to minutes**\n• Utilized YOLO11 for detection, Gemini API for identification/pricing, and Supabase for auth; processed 1200+ images\n• Deployed via **Docker** on an **AWS EC2** instance; scaled to support our **350+ users**\n• Recognized as 'investor-ready' by judges; acknowledged by YC's Jared Friedman, Ankit Gupta, and UW-Madison CS Dept",
+      description: "Co-founded a 5x award-winning AI web application that generates complete home inventories and reduces insurance claim valuation time from 20+ hours to under 2 minutes, accelerating post-disaster recovery for homeowners and adjusters. Scaled to 350+ users by deploying an image valuation pipeline via Docker AWS EC2, using YOLO11 for detection, Gemini API for brand/price identification, and SupabaseDB; processing 1,500+ images and valuing $800K+ in items. Recognized as 'investor-ready' by judges and acknowledged by YC partners and UW-Madison CS Dept for technical excellence.",
       image: "/assets/CRPIC.png",
-      technologies: ["YOLO11", "Google Lens API", "Supabase", "Docker", "AWS EC2", "AI/ML"],
+      technologies: ["YOLO11", "Gemini API", "Supabase", "Docker", "AWS EC2", "AI/ML"],
       category: "ai",
-      demoLink: "https://claim-ready.vercel.app",
+      demoLink: "https://www.useclaimready.ai",
       githubLink: "https://github.com/sohamkundu27/MadData25",
       deployed: true
     },
     {
       id: 2,
       title: "Hyperacing",
-      description: "• Built and scaled a Go backend for a Formula 1 analytics platform with AI insights and live telemetry to **200+ users**\n• Integrated Firebase Auth for secure login and session management, and used F1 WebSockets to stream real-time race data\n• Engineered a Next.js frontend with dynamic dashboards, a live F1 news feed, and live analytics",
+      description: "Created and scaled a Formula 1 analytics platform to 1000+ users, delivering AI insights and live telemetry in real-time. Integrated Firebase Auth for secure login and session management, and used F1 WebSockets to stream real-time race data. Engineered a Next.js frontend with dynamic dashboards, a live F1 news feed, and live analytics.",
       image: "/assets/HRPIC.png",
-      technologies: ["Go", "Next.js", "Firebase Auth", "WebSockets", "REST APIs", "F1 API"],
+      technologies: ["Next.js", "Firebase Auth", "WebSockets", "REST APIs", "F1 API", "Real-time Analytics"],
       category: "fullstack",
       demoLink: "https://hyperacing.us",
       githubLink: "https://github.com/Hype-Racing",
@@ -31,8 +31,8 @@ const PortfolioSection = () => {
     },
     {
       id: 3,
-      title: "Voice-Controlled MCP Robot Arm",
-      description: "• Built a **full-stack** voice interface to control a robot arm by transcribing real-time speech into structured robot commands\n• Engineered an **LLM** task planner to convert prompts like 'clear the table' into JSON robot actions executed via MCP\n• Validated the entire pipeline with async audio input and physics-based simulation, ensuring robust task completion",
+      title: "Voice-Controlled Robot Arm",
+      description: "Architected a full-stack voice interface to control a robot arm by transcribing real-time speech into robot commands. Validated the entire pipeline with async audio input and physics-based simulation built in Python, achieving sub-200 ms end-to-end response time and 90% task completion accuracy for natural, hands-free operation. Engineered a Claude LLM pipeline to convert prompts like 'clear the table' into JSON robot actions executed via MCP.",
       image: "/assets/RobotArmPic.png",
       technologies: ["LLM", "Voice Recognition", "MCP", "Robot Control", "Python", "Real-time Systems"],
       category: "ai",
@@ -43,7 +43,7 @@ const PortfolioSection = () => {
     {
       id: 4,
       title: "Greenhouse IoT Monitoring System",
-      description: "• Built IoT greenhouse system tracking temp, humidity, and brightness on Raspberry Pi in Python, optimizing GPIO control\n• Configured Azure IoT Hub and **REST APIs** for real-time transmission of over 10K data points daily\n• Deployed a **Dockerized Django-React** app on Azure App Services, enabling remote monitoring by parents in India",
+      description: "Innovated an IoT system tracking temp, humidity, and brightness on Raspberry Pi in Python, optimizing GPIO control. 10K+ data points transmitted daily in real time by configuring Azure IoT Hub and REST APIs. Deployed a Dockerized Django-React app on Azure App Services, enabling remote monitoring by parents in India.",
       image: "/assets/GHMS3.jpg",
       technologies: ["Raspberry Pi", "Python", "Azure IoT Hub", "Django", "React", "Docker"],
       category: "iot",
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
     {
       id: 5,
       title: "Smart Budget Tracker",
-      description: "• Built a **full-stack** budget tracking application with .NET 8.0 backend and React frontend for comprehensive financial management\n• Implemented **Entity Framework Core** with MySQL database for robust data persistence and transaction handling\n• Integrated **Chart.js** for dynamic data visualization and **jsPDF** for automated financial report generation\n• Added **AI integration** capabilities using OpenAI SDK for intelligent budget insights and recommendations with **RESTful APIs**",
+      description: "Built a full-stack budget tracking application with .NET 8.0 backend and React frontend for comprehensive financial management. Implemented Entity Framework Core with MySQL database for robust data persistence and transaction handling. Integrated Chart.js for dynamic data visualization and jsPDF for automated financial report generation. Added AI integration capabilities using OpenAI SDK for intelligent budget insights and recommendations with RESTful APIs.",
       image: "/assets/SBT.png",
       technologies: [".NET 8.0", "React", "Entity Framework", "MySQL", "Chart.js", "OpenAI"],
       category: "fullstack",
@@ -65,7 +65,7 @@ const PortfolioSection = () => {
     {
       id: 6,
       title: "Machine Learning Activity Recommender",
-      description: "• Built a **full-stack Flask** web app with **MultiOutput Random Forest** classifier trained on 10K+ datapoints for activity recommendations\n• Achieved ~75% accuracy and 25% Hamming loss using **Scikit-learn** with 80/20 train-test split for multi-label classification\n• Implemented **confidence-based scoring** and **SQL database** storage for user behavior analysis and performance improvement",
+      description: "Built a full-stack Flask web app with MultiOutput Random Forest classifier trained on 10K+ datapoints for activity recommendations. Achieved ~75% accuracy and 25% Hamming loss using Scikit-learn with 80/20 train-test split for multi-label classification. Implemented confidence-based scoring and SQL database storage for user behavior analysis and performance improvement.",
       image: "/assets/MLactivity reocmender.png",
       technologies: ["Flask", "Scikit-learn", "Random Forest", "SQL", "Machine Learning", "Multi-label Classification"],
       category: "ai",
@@ -145,7 +145,7 @@ const PortfolioSection = () => {
                       <ExternalLink size={16} className="mr-2" />
                       Website
                     </Button>
-                  ) : project.title === "Voice-Controlled MCP Robot Arm" ? (
+                  ) : project.title === "Voice-Controlled Robot Arm" ? (
                     <Button
                       variant="outline"
                       size="sm"

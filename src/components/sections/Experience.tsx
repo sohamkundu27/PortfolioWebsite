@@ -10,45 +10,36 @@ const Experience = () => {
     {
       id: 1,
       company: "Blue Cross Blue Shield",
-      position: "AI/Software Engineering Intern",
-      duration: "May 2025 – Present",
-      description: "Built agentic-AI prototypes at Blue Cross Blue Shield to streamline healthcare operations using Azure AI, .NET, and Python microservices. Developed LLM-powered prior-authorization agents for real-time support in customer service workflows. Built a hybrid keyword + semantic search pipeline that cut CSR search time by 90%, accelerating access to care for over 3M+ members. Implemented LangChain to orchestrate and deploy Large Language Model-based knowledge retrieval for live CSR use.",
-      technologies: ["Azure AI", ".NET", "Python", "LangChain", "LLMs", "Microservices"],
+      position: "Software Engineering Intern",
+      duration: "June 2025 – August 2025",
+      description: "Developed an in-call support app for customer service reps, transcribing live calls, retrieving answers from internal databases, and delivering AI-generated responses in under 5 seconds, serving 3M+ members. Engineered a Python-based RAG pipeline with LangChain (custom agents, RetrievalQA) using hybrid keyword + semantic search, Azure real-time transcription, and Azure OpenAI LLMs, cutting CSR lookup time by 95%+. Integrated the pipeline into a desktop app with automated post-call summaries for seamless real-time call assistance.",
+      technologies: ["Python", "LangChain", "Azure OpenAI", "RAG Pipeline", "Real-time Transcription", "Desktop App"],
       logo: "/assets/BCBSLOGO.png"
     },
     {
       id: 2,
       company: "FiPet",
-      position: "Lead SWE/Co-Founder (Part-time)",
-      duration: "May 2025 – Present",
-      description: "Architecting a mobile app platform with AI-powered, gamified financial education modules tailored for Gen Z audiences. Built full-stack Firebase and React Native app integrating ML-driven personalization engines for adaptive learning. Executed and designed full intern hiring pipeline, interviewing and onboarding 10+ engineering candidates. Led 10-person development team across MVP roadmap and intern management; resulting in 200+ user waitlist.",
-      technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development"],
+      position: "Lead SWE/Co-founder (Part-Time)",
+      duration: "May 2025 – August 2025",
+      description: "Architected a cross-platform mobile app with AI-powered, gamified financial education modules tailored for Gen Z audiences. Scaled pre-launch to a 200+ user waitlist using ML-driven personalization for adaptive learning. Led a 15-person engineering team to build the MVP using React Native, Firebase (Firestore, Auth, Cloud Functions), and AI/LLM pipelines for automated bonus quest generation and progress tracking.",
+      technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development", "Team Leadership"],
       logo: "/assets/FipetLogo.jpeg"
     },
     {
       id: 3,
-      company: "Machine Learning for NLOS Imaging Research",
-      position: "Under Prof. Andreas Velten",
+      company: "Computational Optics Group",
+      position: "Machine Learning Researcher",
       duration: "January 2025 – May 2025",
-      description: "Engineered python software for embedded NLOS hardware integrating lasers and SPADs for real-time photon data capture. Designed and trained CNNs in Python and MATLAB to reconstruct occluded objects from sparse time-of-flight datasets. Optimized neural network inference, reducing computational overhead by 20% for deployment on edge devices.",
-      technologies: ["Python", "MATLAB", "CNNs", "SPADs", "Edge Computing", "Computer Vision"],
+      description: "Developed ML pipelines with optical sensor data, enabling non-line-of-sight object imaging and reconstruction. Achieved 20% reduction in neural network inference overhead, improving edge deployment feasibility on embedded systems. Engineered embedded Python software for lasers and high-speed cameras for real-time photon capture, and trained/fine-tuned convolutional neural networks in Python/MATLAB on 3 large-scale datasets with varied scenes, noise, and sensor setups.",
+      technologies: ["Python", "MATLAB", "CNNs", "Optical Sensors", "Edge Computing", "Computer Vision"],
       logo: "/assets/uwmadisonlogo.png"
     },
     {
       id: 4,
-      company: "Outlier AI",
-      position: "Software Engineer",
-      duration: "May 2024 – August 2024",
-      description: "Optimized LLM code for 200+ tasks across 3 projects, improving accuracy by 25% while preserving efficiency and edge cases. Debugged and refactored codebases (Java, Python, JS), integrating RL to fine-tune multi-turn LLM reasoning. Collaborated with research, engineering, and product teams to optimize model outputs and system accuracy.",
-      technologies: ["LLMs", "Python", "Java", "JavaScript", "Reinforcement Learning"],
-      logo: "/assets/outlierlogo.jpeg"
-    },
-    {
-      id: 5,
       company: "Wisconsin Autonomous",
       position: "Software Engineer",
-      duration: "September 2024 – Present",
-      description: "Built ML algorithms with OpenCV for real-time lane, cone, and boundary detection in autonomous vehicles. Integrated perception module into software pipeline coordinating sensor fusion, control systems, and vehicle decision-making. Collaborated with a 30+ person software team, managing version control, code reviews, and CI/CD workflows in Git.",
+      duration: "September 2024 – May 2025",
+      description: "Architected a perception system for autonomous vehicles enabling real-time lane, cone, and boundary detection. Achieved sub-100 ms inference latency for safe high-speed navigation by optimizing ML algorithms with OpenCV. Integrated the perception module into a software pipeline coordinating sensor fusion, control systems, and vehicle decision-making, collaborating with a 30+ person team on Git-based workflows and CI/CD pipelines.",
       technologies: ["OpenCV", "ML", "Computer Vision", "Git", "CI/CD", "Autonomous Systems"],
       logo: "/assets/WAlogo.jpeg"
     }
