@@ -20,17 +20,6 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      title: "Hyperacing",
-      description: "Formula 1 analytics platform on Next.js and Firebase Auth scaled to 1000+ users.",
-      image: "/assets/HRPIC.png",
-      technologies: ["Next.js", "Firebase Auth", "WebSockets", "REST APIs", "F1 API", "Real-time Analytics"],
-      category: "fullstack",
-      demoLink: "https://hyperacing.us",
-      githubLink: "https://github.com/Hype-Racing",
-      deployed: true
-    },
-    {
-      id: 3,
       title: "Voice-Controlled Robot Arm",
       description: "Voice-controlled robot arm uses Claude LLM with MCP and achieved sub-200 ms command response.",
       image: "/assets/RobotArmPic.png",
@@ -41,7 +30,7 @@ const PortfolioSection = () => {
       deployed: false
     },
     {
-      id: 4,
+      id: 3,
       title: "Greenhouse IoT Monitoring System",
       description: "Greenhouse IoT monitor on Raspberry Pi and Azure IoT Hub streamed 10K+ daily sensor datapoints.",
       image: "/assets/GHMS3.jpg",
@@ -51,28 +40,6 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/sohamkundu27/GIoTMS",
       deployed: false
     },
-    {
-      id: 5,
-      title: "Smart Budget Tracker",
-      description: "Budget tracker built with .NET 8 and MySQL is open-source on GitHub.",
-      image: "/assets/SBT.png",
-      technologies: [".NET 8.0", "React", "Entity Framework", "MySQL", "Chart.js", "OpenAI"],
-      category: "fullstack",
-      demoLink: "#",
-      githubLink: "https://github.com/sohamkundu27/SBT",
-      deployed: false
-    },
-    {
-      id: 6,
-      title: "Machine Learning Activity Recommender",
-      description: "Flask activity recommender with Random Forest on Scikit-learn reached ~75% accuracy on 10K+ datapoints.",
-      image: "/assets/MLactivity reocmender.png",
-      technologies: ["Flask", "Scikit-learn", "Random Forest", "SQL", "Machine Learning", "Multi-label Classification"],
-      category: "ai",
-      demoLink: "#",
-      githubLink: "https://github.com/sohamkundu27/ML-Activities-Recommender-System",
-      deployed: false
-    }
   ]
 
   return (
