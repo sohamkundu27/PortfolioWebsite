@@ -21,7 +21,7 @@ const Experience = () => {
       position: "Co-Founder",
       duration: "August 2025 – April 2026",
       stat: "2000+ active users",
-      technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development", "Team Leadership"],
+      technologies: ["React Native", "Firebase", "LangGraph"],
       logo: "/assets/FipetLogo.jpeg"
     },
     {
@@ -29,7 +29,7 @@ const Experience = () => {
       company: "Blue Cross Blue Shield",
       position: "Software Engineering Intern",
       duration: "May 2025 – August 2025",
-      technologies: ["Python", "LangChain", "Azure OpenAI", "RAG Pipeline", "Real-time Transcription", "Desktop App"],
+      technologies: ["Python", "RAG", "Azure OpenAI"],
       logo: "/assets/BCBSLOGO.png"
     },
     {
@@ -37,7 +37,7 @@ const Experience = () => {
       company: "Computational Optics Group",
       position: "Undergraduate Researcher",
       duration: "December 2024 – April 2025",
-      technologies: ["Python", "MATLAB", "CNNs", "Optical Sensors", "Edge Computing", "Computer Vision"],
+      technologies: ["Python", "CNNs", "Edge Computing"],
       logo: "/assets/uwmadisonlogo.png"
     },
     {
@@ -45,7 +45,7 @@ const Experience = () => {
       company: "Wisconsin Autonomous",
       position: "Software Engineer Intern",
       duration: "May 2024 – November 2024",
-      technologies: ["OpenCV", "ML", "Computer Vision", "Git", "CI/CD", "Autonomous Systems"],
+      technologies: ["OpenCV", "Computer Vision", "CI/CD"],
       logo: "/assets/WAlogo.jpeg"
     }
   ];
