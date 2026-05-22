@@ -9,21 +9,21 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      company: "FiPet",
+      position: "Co-Founder",
+      duration: "August 2025 – April 2026",
+      description: "Architected a cross-platform mobile app with AI-powered, gamified financial education modules tailored for Gen Z audiences. Scaled pre-launch to a 200+ user waitlist using ML-driven personalization for adaptive learning. Led a 15-person engineering team to build the MVP using React Native, Firebase (Firestore, Auth, Cloud Functions), and AI/LLM pipelines for automated bonus quest generation and progress tracking.",
+      technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development", "Team Leadership"],
+      logo: "/assets/FipetLogo.jpeg"
+    },
+    {
+      id: 2,
       company: "Blue Cross Blue Shield",
       position: "Software Engineering Intern",
       duration: "May 2025 – August 2025",
       description: "Developed an in-call support app for customer service reps, transcribing live calls, retrieving answers from internal databases, and delivering AI-generated responses in under 5 seconds, serving 3M+ members. Engineered a Python-based RAG pipeline with LangChain (custom agents, RetrievalQA) using hybrid keyword + semantic search, Azure real-time transcription, and Azure OpenAI LLMs, cutting CSR lookup time by 95%+. Integrated the pipeline into a desktop app with automated post-call summaries for seamless real-time call assistance.",
       technologies: ["Python", "LangChain", "Azure OpenAI", "RAG Pipeline", "Real-time Transcription", "Desktop App"],
       logo: "/assets/BCBSLOGO.png"
-    },
-    {
-      id: 2,
-      company: "FiPet",
-      position: "Lead SWE/Co-founder (Part-Time)",
-      duration: "August 2025 – April 2026",
-      description: "Architected a cross-platform mobile app with AI-powered, gamified financial education modules tailored for Gen Z audiences. Scaled pre-launch to a 200+ user waitlist using ML-driven personalization for adaptive learning. Led a 15-person engineering team to build the MVP using React Native, Firebase (Firestore, Auth, Cloud Functions), and AI/LLM pipelines for automated bonus quest generation and progress tracking.",
-      technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development", "Team Leadership"],
-      logo: "/assets/FipetLogo.jpeg"
     },
     {
       id: 3,

@@ -22,8 +22,8 @@ const Header = ({ scrollToSection }: HeaderProps) => {
 
   const navItems = [
     { id: "about", label: "About Me" },
-    { id: "awards", label: "Awards" },
     { id: "experience", label: "Experience" },
+    { id: "awards", label: "Awards" },
     { id: "skills", label: "Skills" },
     { id: "portfolio", label: "Portfolio" },
     { id: "contact", label: "Contact" },
