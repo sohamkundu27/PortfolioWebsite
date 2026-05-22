@@ -91,9 +91,9 @@ const Hero = ({ scrollToSection }: HeroProps) => {
           size="lg"
           className="text-white border-2 border-blue-500 hover:bg-blue-500 transition-all duration-300 hover:scale-105"
           style={{ backgroundColor: "#1261A0" }}
-          onClick={() => scrollToSection("about")}
+          onClick={() => scrollToSection("experience")}
         >
-          Learn More About Me
+          View Experience
         </Button>
       </div>
     </section>

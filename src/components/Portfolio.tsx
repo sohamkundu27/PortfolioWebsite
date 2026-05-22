@@ -3,7 +3,6 @@
 import { useEffect } from "react"
 import Header from "./sections/Header"
 import Hero from "./sections/Hero"
-import About from "./sections/About"
 import Experience from "./sections/Experience"
 import Awards from "./sections/Awards"
 import PortfolioSection from "./sections/PortfolioSection"
@@ -19,7 +18,7 @@ const Portfolio = () => {
   }
 
   useEffect(() => {
-    const sections = ["home", "about", "experience", "portfolio", "awards", "contact"]
+    const sections = ["home", "experience", "portfolio", "awards", "contact"]
     
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100
@@ -41,7 +40,6 @@ const Portfolio = () => {
     <div className="min-h-screen">
       <Header scrollToSection={scrollToSection} />
       <Hero scrollToSection={scrollToSection} />
-      <About />
       <Experience />
       <PortfolioSection />
       <Awards />
