@@ -28,7 +28,7 @@ const Experience = () => {
     {
       id: 3,
       company: "Computational Optics Group",
-      position: "Machine Learning Researcher",
+      position: "Undergraduate Researcher",
       duration: "December 2024 – April 2025",
       description: "Developed ML pipelines with optical sensor data, enabling non-line-of-sight object imaging and reconstruction. Achieved 20% reduction in neural network inference overhead, improving edge deployment feasibility on embedded systems. Engineered embedded Python software for lasers and high-speed cameras for real-time photon capture, and trained/fine-tuned convolutional neural networks in Python/MATLAB on 3 large-scale datasets with varied scenes, noise, and sensor setups.",
       technologies: ["Python", "MATLAB", "CNNs", "Optical Sensors", "Edge Computing", "Computer Vision"],
@@ -37,7 +37,7 @@ const Experience = () => {
     {
       id: 4,
       company: "Wisconsin Autonomous",
-      position: "Software Engineer",
+      position: "Software Engineer Intern",
       duration: "May 2024 – November 2024",
       description: "Architected a perception system for autonomous vehicles enabling real-time lane, cone, and boundary detection. Achieved sub-100 ms inference latency for safe high-speed navigation by optimizing ML algorithms with OpenCV. Integrated the perception module into a software pipeline coordinating sensor fusion, control systems, and vehicle decision-making, collaborating with a 30+ person team on Git-based workflows and CI/CD pipelines.",
       technologies: ["OpenCV", "ML", "Computer Vision", "Git", "CI/CD", "Autonomous Systems"],
