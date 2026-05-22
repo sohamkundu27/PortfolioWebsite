@@ -39,7 +39,7 @@ const Awards = () => {
   const fiPetAwards = [
     {
       id: 4,
-      title: "StartingBlock Level Set Pre-Accelerator",
+      title: "StartingBlock Level Set Accelerator",
       description: "Selected for StartingBlock's 6-week Level Set pre-accelerator program to validate and strengthen FiPet's business model.",
       icon: Award,
       color: "#1261A0",
