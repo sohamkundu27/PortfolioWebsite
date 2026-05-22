@@ -14,7 +14,7 @@ const Experience = () => {
       duration: "May 2026 – August 2026",
       description: "Incoming internship focused on building and deploying machine learning solutions for real-world engineering workflows.",
       technologies: ["Machine Learning", "Python", "Model Deployment"],
-      logo: "/file.svg"
+      logo: "/assets/honeywelllogo.png"
     },
     {
       id: 2,
