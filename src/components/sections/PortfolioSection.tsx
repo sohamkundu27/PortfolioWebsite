@@ -10,7 +10,7 @@ const PortfolioSection = () => {
     {
       id: 1,
       title: "ClaimReady",
-      description: "Insurance AI app using YOLO11 and Gemini API cut valuation from 20+ hours to 2 minutes.",
+      description: "Insurance AI app using YOLO11 and Gemini API cut valuation to 2 minutes for 1000+ users.",
       image: "/assets/CRPIC.png",
       technologies: ["YOLO11", "Gemini API", "Supabase", "Docker", "AWS EC2", "AI/ML"],
       category: "ai",
