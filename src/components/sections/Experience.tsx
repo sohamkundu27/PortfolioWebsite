@@ -12,7 +12,6 @@ const Experience = () => {
       company: "Honeywell",
       position: "Machine Learning Engineering Intern",
       duration: "May 2026 – August 2026",
-      description: "Incoming internship focused on building and deploying machine learning solutions for real-world engineering workflows.",
       technologies: ["Machine Learning", "Python", "Model Deployment"],
       logo: "/assets/honeywelllogo.png"
     },
@@ -21,7 +20,6 @@ const Experience = () => {
       company: "FiPet",
       position: "Co-Founder",
       duration: "August 2025 – April 2026",
-      description: "Architected a cross-platform mobile app with AI-powered, gamified financial education modules tailored for Gen Z audiences. Scaled pre-launch to a 200+ user waitlist using ML-driven personalization for adaptive learning. Led a 15-person engineering team to build the MVP using React Native, Firebase (Firestore, Auth, Cloud Functions), and AI/LLM pipelines for automated bonus quest generation and progress tracking.",
       technologies: ["React Native", "Firebase", "ML", "AI", "Mobile Development", "Team Leadership"],
       logo: "/assets/FipetLogo.jpeg"
     },
@@ -30,7 +28,6 @@ const Experience = () => {
       company: "Blue Cross Blue Shield",
       position: "Software Engineering Intern",
       duration: "May 2025 – August 2025",
-      description: "Developed an in-call support app for customer service reps, transcribing live calls, retrieving answers from internal databases, and delivering AI-generated responses in under 5 seconds, serving 3M+ members. Engineered a Python-based RAG pipeline with LangChain (custom agents, RetrievalQA) using hybrid keyword + semantic search, Azure real-time transcription, and Azure OpenAI LLMs, cutting CSR lookup time by 95%+. Integrated the pipeline into a desktop app with automated post-call summaries for seamless real-time call assistance.",
       technologies: ["Python", "LangChain", "Azure OpenAI", "RAG Pipeline", "Real-time Transcription", "Desktop App"],
       logo: "/assets/BCBSLOGO.png"
     },
@@ -39,7 +36,6 @@ const Experience = () => {
       company: "Computational Optics Group",
       position: "Undergraduate Researcher",
       duration: "December 2024 – April 2025",
-      description: "Developed ML pipelines with optical sensor data, enabling non-line-of-sight object imaging and reconstruction. Achieved 20% reduction in neural network inference overhead, improving edge deployment feasibility on embedded systems. Engineered embedded Python software for lasers and high-speed cameras for real-time photon capture, and trained/fine-tuned convolutional neural networks in Python/MATLAB on 3 large-scale datasets with varied scenes, noise, and sensor setups.",
       technologies: ["Python", "MATLAB", "CNNs", "Optical Sensors", "Edge Computing", "Computer Vision"],
       logo: "/assets/uwmadisonlogo.png"
     },
@@ -48,7 +44,6 @@ const Experience = () => {
       company: "Wisconsin Autonomous",
       position: "Software Engineer Intern",
       duration: "May 2024 – November 2024",
-      description: "Architected a perception system for autonomous vehicles enabling real-time lane, cone, and boundary detection. Achieved sub-100 ms inference latency for safe high-speed navigation by optimizing ML algorithms with OpenCV. Integrated the perception module into a software pipeline coordinating sensor fusion, control systems, and vehicle decision-making, collaborating with a 30+ person team on Git-based workflows and CI/CD pipelines.",
       technologies: ["OpenCV", "ML", "Computer Vision", "Git", "CI/CD", "Autonomous Systems"],
       logo: "/assets/WAlogo.jpeg"
     }
@@ -119,10 +114,6 @@ const Experience = () => {
 
                         {/* Full Width Content */}
                         <div className="w-full">
-                          <p className="text-gray-700 leading-relaxed mb-4 text-sm w-full">
-                            {exp.description}
-                          </p>
-
                           {/* Technologies */}
                           <div className="flex flex-wrap gap-2 mb-4 w-full">
                             {exp.technologies.map((tech, techIndex) => (
