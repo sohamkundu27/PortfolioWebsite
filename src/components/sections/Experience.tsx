@@ -9,6 +9,15 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      company: "Honeywell",
+      position: "Machine Learning Engineering Intern",
+      duration: "May 2026 – August 2026",
+      description: "Incoming internship focused on building and deploying machine learning solutions for real-world engineering workflows.",
+      technologies: ["Machine Learning", "Python", "Model Deployment"],
+      logo: "/file.svg"
+    },
+    {
+      id: 2,
       company: "FiPet",
       position: "Co-Founder",
       duration: "August 2025 – April 2026",
@@ -17,7 +26,7 @@ const Experience = () => {
       logo: "/assets/FipetLogo.jpeg"
     },
     {
-      id: 2,
+      id: 3,
       company: "Blue Cross Blue Shield",
       position: "Software Engineering Intern",
       duration: "May 2025 – August 2025",
@@ -26,7 +35,7 @@ const Experience = () => {
       logo: "/assets/BCBSLOGO.png"
     },
     {
-      id: 3,
+      id: 4,
       company: "Computational Optics Group",
       position: "Undergraduate Researcher",
       duration: "December 2024 – April 2025",
@@ -35,7 +44,7 @@ const Experience = () => {
       logo: "/assets/uwmadisonlogo.png"
     },
     {
-      id: 4,
+      id: 5,
       company: "Wisconsin Autonomous",
       position: "Software Engineer Intern",
       duration: "May 2024 – November 2024",
