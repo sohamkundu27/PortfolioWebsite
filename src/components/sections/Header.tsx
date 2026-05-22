@@ -24,7 +24,6 @@ const Header = ({ scrollToSection }: HeaderProps) => {
     { id: "about", label: "About Me" },
     { id: "experience", label: "Experience" },
     { id: "awards", label: "Awards" },
-    { id: "skills", label: "Skills" },
     { id: "portfolio", label: "Portfolio" },
     { id: "contact", label: "Contact" },
   ]

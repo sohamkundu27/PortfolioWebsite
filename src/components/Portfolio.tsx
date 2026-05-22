@@ -6,7 +6,6 @@ import Hero from "./sections/Hero"
 import About from "./sections/About"
 import Experience from "./sections/Experience"
 import Awards from "./sections/Awards"
-import Skills from "./sections/Skills"
 import PortfolioSection from "./sections/PortfolioSection"
 import Contact from "./sections/Contact"
 import Footer from "./sections/Footer"
@@ -20,7 +19,7 @@ const Portfolio = () => {
   }
 
   useEffect(() => {
-    const sections = ["home", "about", "experience", "awards", "skills", "portfolio", "contact"]
+    const sections = ["home", "about", "experience", "awards", "portfolio", "contact"]
     
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100
@@ -45,7 +44,6 @@ const Portfolio = () => {
       <About />
       <Experience />
       <Awards />
-      <Skills />
       <PortfolioSection />
       <Contact />
       <Footer scrollToSection={scrollToSection} />

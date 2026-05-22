@@ -17,7 +17,6 @@ const Footer = ({ scrollToSection }: FooterProps) => {
   const quickLinks = [
     { label: "About", onClick: () => scrollToSection("about") },
     { label: "Experience", onClick: () => scrollToSection("experience") },
-    { label: "Skills", onClick: () => scrollToSection("skills") },
     { label: "Portfolio", onClick: () => scrollToSection("portfolio") }
   ]
 
