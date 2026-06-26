@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { Github, FileText, Linkedin, Briefcase, Mail } from "lucide-react"
+import { Github, Linkedin, Briefcase, Mail } from "lucide-react"
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void
@@ -10,7 +10,6 @@ interface HeroProps {
 const Hero = ({ scrollToSection }: HeroProps) => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/sohamkundu27" },
-    { icon: FileText, label: "Resume", href: "/assets/SohamKunduResume.pdf" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/sohamkundu27/" },
     { icon: Briefcase, label: "Portfolio", onClick: () => scrollToSection("portfolio") },
     { icon: Mail, label: "Contact", onClick: () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }) },
