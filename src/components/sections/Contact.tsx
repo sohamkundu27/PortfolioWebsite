@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 
 const Contact = () => {
 
@@ -11,12 +11,6 @@ const Contact = () => {
       label: "Email",
       value: "your.email@example.com",
       link: "mailto:your.email@example.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
     },
     {
       icon: MapPin,
