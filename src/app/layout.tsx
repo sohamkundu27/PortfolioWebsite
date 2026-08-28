@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/assets/sohamheadshot.jpg',
+    apple: '/assets/sohamheadshot.jpeg',
   },
   openGraph: {
     type: 'website',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Soham Kundu's Portfolio",
     images: [
       {
-        url: '/assets/sohamheadshot.jpg',
+        url: '/assets/sohamheadshot.jpeg',
         width: 1200,
         height: 630,
         alt: 'Soham Kundu',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Soham Kundu's Portfolio",
     description: 'Full Stack Developer focused on AI-powered systems and real-world impact.',
-    images: ['/assets/sohamheadshot.jpg'],
+    images: ['/assets/sohamheadshot.jpeg'],
   },
   robots: {
     index: true,

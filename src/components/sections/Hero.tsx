@@ -30,7 +30,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
             <img 
-              src="/assets/sohamheadshot.jpg" 
+              src="/assets/sohamheadshot.jpeg" 
               alt="Soham Kundu" 
               className="w-full h-full object-cover"
             />
