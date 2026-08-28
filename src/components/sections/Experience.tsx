@@ -9,7 +9,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "Honeywell",
+      company: "Honeywell Aerospace",
       position: "Machine Learning Engineering Intern",
       duration: "May 2026 – August 2026",
       technologies: ["Machine Learning", "Python", "Model Deployment", "Computer Vision", "Robotics"],
