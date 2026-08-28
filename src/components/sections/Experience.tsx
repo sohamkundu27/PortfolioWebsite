@@ -12,7 +12,7 @@ const Experience = () => {
       company: "Honeywell",
       position: "Machine Learning Engineering Intern",
       duration: "May 2026 – August 2026",
-      technologies: ["Machine Learning", "Python", "Model Deployment"],
+      technologies: ["Machine Learning", "Python", "Model Deployment", "Computer Vision", "Robotics"],
       logo: "/assets/honeywelllogo.png"
     },
     {
