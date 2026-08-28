@@ -28,7 +28,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Profile Picture */}
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
+          <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
             <img 
               src="/assets/sohamheadshot.jpeg" 
               alt="Soham Kundu" 
