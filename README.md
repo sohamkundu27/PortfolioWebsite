@@ -119,6 +119,6 @@ This project is licensed under the MIT License.
 
 **Soham Kundu**
 
-- Email: skundu6@wisc.edu
+- Email: sohamkundu2704@gmail.com
 - GitHub: [@sohamkundu27](https://github.com/sohamkundu27)
 - LinkedIn: [sohamkundu27](https://linkedin.com/in/sohamkundu27)

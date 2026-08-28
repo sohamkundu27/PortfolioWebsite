@@ -68,11 +68,11 @@ const Footer = ({ scrollToSection }: FooterProps) => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p>📧 skundu6@wisc.edu</p>
+              <p>📧 sohamkundu2704@gmail.com</p>
             </div>
             <div className="mt-6">
               <button
-                onClick={() => window.open("mailto:skundu6@wisc.edu", "_blank")}
+                onClick={() => window.open("mailto:sohamkundu2704@gmail.com", "_blank")}
                 className="inline-flex items-center px-4 py-2 border border-blue-600 rounded-lg text-blue-400 hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105"
               >
                 <Mail size={16} className="mr-2" />
