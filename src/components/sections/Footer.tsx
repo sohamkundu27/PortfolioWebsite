@@ -69,7 +69,6 @@ const Footer = ({ scrollToSection }: FooterProps) => {
             <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
               <p>📧 skundu6@wisc.edu</p>
-              <p>📱 +1 (763) 406-1195</p>
             </div>
             <div className="mt-6">
               <button
