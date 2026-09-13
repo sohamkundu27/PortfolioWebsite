@@ -29,7 +29,7 @@ const Footer = ({ scrollToSection }: FooterProps) => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Soham Kundu</h3>
             <p className="text-gray-400 leading-relaxed">
-              Full Stack Developer focused on AI-powered systems and real-world impact.
+              Pursuing a career in robotics and computer vision.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map(({ icon: Icon, label, href }) => (
