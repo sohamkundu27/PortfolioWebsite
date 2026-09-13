@@ -10,8 +10,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Soham Kundu's Portfolio",
-  description: 'Full Stack Developer focused on AI-powered systems and real-world impact. Computer Engineering + Computer Science @ UW-Madison.',
-  keywords: ['Software Engineer', 'AI/ML', 'Full Stack Developer', 'UW-Madison', 'React', 'Next.js', 'Python'],
+  description: 'Aspiring robotics and computer vision engineer focused on autonomous systems and real-world impact. Computer Engineering + Computer Science @ UW-Madison.',
+  keywords: ['Robotics', 'Computer Vision', 'Autonomous Systems', 'UW-Madison', 'React', 'Next.js', 'Python'],
   authors: [{ name: 'Soham Kundu' }],
   creator: 'Soham Kundu',
   icons: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://sohamkundu.com',
     title: "Soham Kundu's Portfolio",
-    description: 'Full Stack Developer focused on AI-powered systems and real-world impact.',
+    description: 'Aspiring robotics and computer vision engineer focused on autonomous systems and real-world impact.',
     siteName: "Soham Kundu's Portfolio",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Soham Kundu's Portfolio",
-    description: 'Full Stack Developer focused on AI-powered systems and real-world impact.',
+    description: 'Aspiring robotics and computer vision engineer focused on autonomous systems and real-world impact.',
     images: ['/assets/sohamheadshot.jpeg'],
   },
   robots: {
