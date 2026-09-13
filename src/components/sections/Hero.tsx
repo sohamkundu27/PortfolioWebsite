@@ -45,7 +45,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
           Computer Engineering + Computer Science @ UW-Madison (Expected May 2028)
           <br />
           <span className="text-lg text-gray-300">
-            Pursuing a career in Software Engineering & AI/ML.
+            Pursuing a career in Robotics & Computer Vision.
           </span>
         </p>
 
