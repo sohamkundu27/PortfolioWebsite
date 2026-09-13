@@ -8,6 +8,19 @@ import { ExternalLink, Github, Eye, Play } from "lucide-react"
 const PortfolioSection = () => {
   const projects = [
     {
+      id: 4,
+      title: "Monocular Visual SLAM & Localization",
+      description: "Built a monocular SLAM pipeline in Python with ORB feature tracking, loop closure, and GTSAM pose-graph optimization. Evaluated on KITTI using ground-truth scale for benchmarking.",
+      image: "/assets/monocular-slam-trajectory.png",
+      imageAlt: "KITTI sequence 00: ground-truth, raw visual odometry, and optimized SLAM trajectories",
+      imageContain: true,
+      technologies: ["Python", "OpenCV", "ORB", "GTSAM", "SLAM", "KITTI"],
+      category: "robotics",
+      demoLink: "#",
+      githubLink: "https://github.com/sohamkundu27/Monocular-Visual-SLAM-Localization",
+      deployed: false
+    },
+    {
       id: 1,
       title: "ClaimReady",
       description: "Insurance AI app using YOLO11 and Gemini API cut valuation to 2 minutes for 1000+ users.",
@@ -59,8 +72,8 @@ const PortfolioSection = () => {
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  alt={project.imageAlt ?? project.title}
+                  className={`w-full h-48 ${project.imageContain ? "object-contain bg-white p-2" : "object-cover group-hover:scale-105"} transition-transform duration-300`}
                 />
                 {project.deployed && (
                   <div className="absolute top-4 right-4">
