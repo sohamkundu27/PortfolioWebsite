@@ -57,6 +57,9 @@ const Experience = () => {
     },
     {
       id: 4,
+      links: [
+        { label: "Lab Website", href: "https://www.compoptics.wisc.edu/", icon: ExternalLink }
+      ],
       company: "UW–Madison Computer Sciences",
       position: "Undergraduate Researcher",
       duration: "Dec 2024 - Apr 2025",
