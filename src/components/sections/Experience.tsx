@@ -3,12 +3,15 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Linkedin, Calendar } from "lucide-react"
+import { ExternalLink, Linkedin, Calendar, Github } from "lucide-react"
 
 const Experience = () => {
   const experiences = [
     {
       id: 6,
+      links: [
+        { label: "Sensor Fusion Code", href: "https://github.com/sohamkundu27/sensor-fusion", icon: Github }
+      ],
       company: "UW–Madison Computer Sciences",
       position: "Undergraduate Researcher",
       duration: "Sep 2026 - Present",
@@ -163,6 +166,25 @@ const Experience = () => {
                             
 
                           </div>
+
+                          {exp.links && (
+                            <div className="flex flex-wrap gap-3">
+                              {exp.links.map(({ label, href, icon: Icon }) => (
+                                <Button
+                                  key={href}
+                                  asChild
+                                  variant="outline"
+                                  size="sm"
+                                  className="text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                                >
+                                  <a href={href} target="_blank" rel="noopener noreferrer">
+                                    <Icon size={16} className="mr-2" aria-hidden="true" />
+                                    {label}
+                                  </a>
+                                </Button>
+                              ))}
+                            </div>
+                          )}
 
                           {/* Website and LinkedIn Buttons for FiPet */}
                           {exp.company === "FiPet" && (
