@@ -21,9 +21,12 @@ const Experience = () => {
     {
       id: 1,
       company: "Honeywell Aerospace",
-      position: "Machine Learning Engineering Intern",
-      duration: "May 2026 – August 2026",
-      technologies: ["Machine Learning", "Python", "Model Deployment", "Computer Vision", "Robotics"],
+      position: "Machine Learning Intern",
+      duration: "May 2026 - Aug 2026",
+      employmentType: "Internship",
+      location: "United States · On-site",
+      description: "Real-time detection & tracking, autonomous drones, ROS 2, NVIDIA Jetson AGX Orin",
+      technologies: ["Computer Vision", "Robotics", "ROS 2", "NVIDIA Jetson AGX Orin"],
       logo: "/assets/honeywellogo.png"
     },
     {
