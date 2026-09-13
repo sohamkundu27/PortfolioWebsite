@@ -33,8 +33,10 @@ const Experience = () => {
       id: 2,
       company: "FiPet",
       position: "Co-Founder",
-      duration: "August 2025 – April 2026",
-      stat: "2000+ active users",
+      duration: "Aug 2025 - Apr 2026",
+      employmentType: "Full-time",
+      location: "San Francisco, California, United States · Remote",
+      description: "fipet.dev\n3000+ downloads on App Store",
       technologies: ["React Native", "Firebase", "LangGraph"],
       logo: "/assets/FipetLogo.jpeg"
     },
@@ -124,11 +126,7 @@ const Experience = () => {
                               <Calendar size={16} className="text-gray-500" />
                               <span>{exp.duration}</span>
                             </div>
-                            {exp.stat && (
-                              <p className="text-sm text-gray-700 mt-1 font-medium">
-                                {exp.stat}
-                              </p>
-                            )}
+
                           </div>
                         </div>
 
