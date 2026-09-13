@@ -42,9 +42,12 @@ const Experience = () => {
     },
     {
       id: 3,
-      company: "Blue Cross Blue Shield",
-      position: "Software Engineering Intern",
-      duration: "May 2025 – August 2025",
+      company: "Blue Cross Blue Shield Association",
+      position: "Software Engineer Intern",
+      duration: "May 2025 - Aug 2025",
+      employmentType: "Internship",
+      location: "United States · On-site",
+      description: "Built and shipped a RAG-based in-call assistant to production for member support workflows",
       technologies: ["Python", "RAG", "Azure OpenAI"],
       logo: "/assets/BCBSLOGO.png"
     },
