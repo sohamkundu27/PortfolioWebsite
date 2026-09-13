@@ -8,6 +8,17 @@ import { ExternalLink, Linkedin, Calendar } from "lucide-react"
 const Experience = () => {
   const experiences = [
     {
+      id: 6,
+      company: "UW–Madison Computer Sciences",
+      position: "Undergraduate Researcher",
+      duration: "Sep 2026 - Present",
+      employmentType: "Part-time",
+      location: "Madison, Wisconsin, United States · On-site",
+      description: "Mohit Gupta's WISION Lab - ML based Multi-sensor fusion (LiDAR, RGB, radar) for autonomous driving in fog",
+      technologies: ["Machine Learning", "Sensor Fusion", "LiDAR", "Computer Vision"],
+      logo: "/assets/uwmadisonlogo.png"
+    },
+    {
       id: 1,
       company: "Honeywell Aerospace",
       position: "Machine Learning Engineering Intern",
@@ -117,6 +128,13 @@ const Experience = () => {
                             )}
                           </div>
                         </div>
+
+                        {exp.employmentType && (
+                          <p className="text-sm text-gray-600">{exp.employmentType} · {exp.location}</p>
+                        )}
+                        {exp.description && (
+                          <p className="text-gray-700 leading-relaxed whitespace-pre-line">{exp.description}</p>
+                        )}
 
                         {/* Full Width Content */}
                         <div className="w-full">
