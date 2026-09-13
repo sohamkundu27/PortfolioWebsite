@@ -10,6 +10,7 @@ const Experience = () => {
     {
       id: 6,
       links: [
+        { label: "WISION Lab", href: "https://wisionlab.com/", icon: ExternalLink },
         { label: "Sensor Fusion Code", href: "https://github.com/sohamkundu27/sensor-fusion", icon: Github }
       ],
       company: "UW–Madison Computer Sciences",
