@@ -66,8 +66,11 @@ const Experience = () => {
       id: 5,
       company: "Wisconsin Autonomous",
       position: "Software Engineer Intern",
-      duration: "May 2024 – November 2024",
-      technologies: ["OpenCV", "Computer Vision", "CI/CD"],
+      duration: "May 2024 - Nov 2024",
+      employmentType: "Part-time",
+      location: "Madison · On-site",
+      description: "Built EKF-based sensor fusion (LiDAR, radar, camera) for real-time lane, cone, and boundary detection — Python, ROS 2",
+      technologies: ["Python", "ROS 2", "Sensor Fusion", "Computer Vision"],
       logo: "/assets/WAlogo.jpeg"
     }
   ];
