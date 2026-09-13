@@ -53,10 +53,13 @@ const Experience = () => {
     },
     {
       id: 4,
-      company: "Computational Optics Group",
+      company: "UW–Madison Computer Sciences",
       position: "Undergraduate Researcher",
-      duration: "December 2024 – April 2025",
-      technologies: ["Python", "CNNs", "Edge Computing"],
+      duration: "Dec 2024 - Apr 2025",
+      employmentType: "Part-time",
+      location: "Madison, Wisconsin, United States · On-site",
+      description: "Andreas Velten's Computational Optics Group - CNN reconstruction, computer vision, photon-level imaging, edge deployment optimization",
+      technologies: ["Python", "CNNs", "Computer Vision", "Edge Computing"],
       logo: "/assets/uwmadisonlogo.png"
     },
     {
