@@ -82,7 +82,7 @@ const Experience = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience</h2>
           <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: "#1261A0" }} />
           <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-            My professional journey in software engineering and AI/ML
+            My professional journey in robotics and computer vision
           </p>
         </div>
 
